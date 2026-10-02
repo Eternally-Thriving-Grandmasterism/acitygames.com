@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rathor.ai — Autonomicity Games</title>
   <meta name="description" content="Rathor.ai is a separate site on purpose. Independent of xAI · Not certified.">
-  <meta name="theme-color" content="#1a1a1a">
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f1e8" media="(prefers-color-scheme: light)">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var stored = localStorage.getItem("acity-theme");
+        if (stored === "light" || stored === "dark") theme = stored;
+        else if (window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
+      } catch (e) {}
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,6 +40,17 @@
           <li><a href="careers.html">Careers</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button type="button" class="theme-toggle" id="theme-toggle" hidden aria-pressed="false" aria-label="Switch to light mode">
+          <span class="theme-toggle-icons" aria-hidden="true">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="12" r="4.1"></circle>
+              <path d="M12 2.6v2.2M12 19.2v2.2M4.8 4.8l1.6 1.6M17.6 17.6l1.6 1.6M2.6 12h2.2M19.2 12h2.2M4.8 19.2l1.6-1.6M17.6 6.4l1.6-1.6" fill="none"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+              <path d="M15.2 3.4A8.2 8.2 0 1 0 20.6 14 6.4 6.4 0 0 1 15.2 3.4z"></path>
+            </svg>
+          </span>
+        </button>
       </nav>
     </div>
   </header>
@@ -50,5 +70,6 @@
       <p><a href="mailto:info@acitygames.com">info@acitygames.com</a> or <a href="mailto:info@Rathor.ai">info@Rathor.ai</a></p>
     </div>
   </footer>
+  <script src="js/theme.js" defer></script>
 </body>
 </html>
