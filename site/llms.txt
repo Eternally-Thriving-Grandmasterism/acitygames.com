@@ -36,7 +36,7 @@ Canon five: Human, Quellorian, Draek, Cydruid, Ambrosian.
 - Human: Choose flow or reserve.
 - Quellorian: Flow restores the well. Harmony is shared field. The Quellorian / Aetherion Luminari Alliance is a coalition centered around light, resonance technology, unity, and progressive evolution. Their mothership is the Auroral Unification Nexus (TAUN).
 - Draek: Take without rest stresses the well. The Draek Dominion is a predatory, hivemind-driven empire. The Brood Spire is its tall, dark domination hub. The Crownstone is a large glowing purple crystal at the center of the Hivelord’s helmet.
-- Cydruid: Mend / Offer. Cydruids weave living networks that heal, protect, and restore. A Cydruid is a human in a cyborg body. How much of the human remains is a choice: just the brain, the brain and face, or the spine along the whole chakra path down to the root. The rest is a robot body and limbs, which means fewer infections and bionic powers. Cydruids are not treants and not tree people. Nature is practice, not species.
+- Cydruid: Mend / Offer. Cydruids weave living networks that heal, protect, and restore. A Cydruid is a human who chooses how much stays human. Limbs, then torso, are swapped for machine part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. Cydruids are not treants and not tree people. Nature is practice, not species.
 - Ambrosian: Attune. The well sings or cracks. Core philosophy: Attunement over Domination. Humanoid but elongated and elegant, with visible internal crystal lattices that glow.
 
 ## Pictures
