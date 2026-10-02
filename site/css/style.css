@@ -1,15 +1,21 @@
 :root {
   color-scheme: dark;
-  --bg: #101318;
-  --bg-elev: #181d27;
-  --line: #2c3444;
+  --logo-outline: #FD8831;
+  --logo-body: #FDB55C;
+  --logo-highlight: #FED39D;
+  --accent: #e65f00;
+  --accent-2: #fcb55b;
+  --bg: #1a1a1a;
+  --bg-elev: #242424;
+  --tab: #111111;
+  --line: #3a3a3a;
   --text: #f4f6f8;
-  --muted: #c5ceda;
-  --accent: #e4b15a;
-  --accent-ink: #1c1408;
-  --link: #f3d7a6;
-  --focus: #ffe38a;
+  --muted: #c8c8c8;
+  --accent-ink: #1a1a1a;
+  --link: var(--logo-highlight);
+  --focus: var(--logo-highlight);
   --max: 70rem;
+  --mark: clamp(96px, 14vw, 200px);
 }
 
 *,
@@ -27,11 +33,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background:
-    radial-gradient(1200px 420px at 10% -10%, rgba(228, 177, 90, 0.08), transparent 55%),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.0625rem;
   line-height: 1.6;
 }
@@ -74,8 +78,49 @@ a:focus-visible {
 }
 
 .site-header {
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
-  background: rgba(13, 16, 21, 0.92);
+}
+
+.logo-tab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(92vw, calc(var(--mark) * 2.64));
+  margin: 0.35rem auto 0;
+  padding: 0.45rem 18% 0.55rem;
+  background: var(--tab);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+.logo-tab::before,
+.logo-tab::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  pointer-events: none;
+}
+
+.logo-tab::before {
+  clip-path: polygon(5.4% 25.8%, 14.9% 66.4%, 13.8% 73.4%, 6.1% 31.3%);
+}
+
+.logo-tab::after {
+  clip-path: polygon(94.6% 25.8%, 85.1% 66.4%, 86.2% 73.4%, 93.9% 31.3%);
+}
+
+.logo-link {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  line-height: 0;
+}
+
+.logo-link img {
+  width: var(--mark);
+  height: auto;
 }
 
 .bar {
@@ -88,19 +133,12 @@ a:focus-visible {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
   color: var(--text);
   text-decoration: none;
-  font-weight: 680;
-  letter-spacing: 0.01em;
-}
-
-.mark {
-  width: 1.7rem;
-  height: 1.7rem;
-  flex: none;
+  font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
 }
 
 .brand:focus-visible {
@@ -126,7 +164,7 @@ nav a {
 
 nav a[aria-current="page"] {
   color: var(--text);
-  background: #242b38;
+  background: #2c2c2c;
 }
 
 main {
@@ -147,11 +185,17 @@ main:focus {
   text-transform: uppercase;
 }
 
+h1,
+h2 {
+  font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: 400;
+}
+
 h1 {
   margin: 0 0 0.85rem;
   font-size: clamp(2.05rem, 5vw, 3.35rem);
   line-height: 1.12;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.01em;
   max-width: 18ch;
 }
 
@@ -225,6 +269,13 @@ h2 {
   font-size: 0.95rem;
 }
 
+.footer-mark {
+  display: block;
+  width: 64px;
+  height: auto;
+  margin: 0 0 0.75rem;
+}
+
 .site-footer p {
   margin: 0.15rem 0;
 }
@@ -244,6 +295,14 @@ h2 {
 @media (max-width: 640px) {
   .wrap {
     width: min(var(--max), calc(100% - 1.5rem));
+  }
+
+  .bar {
+    justify-content: center;
+  }
+
+  nav ul {
+    justify-content: center;
   }
 
   main {
