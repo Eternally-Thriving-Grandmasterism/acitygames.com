@@ -316,7 +316,7 @@ html[data-theme="light"] .theme-icon-moon,
 
 main {
   flex: 1;
-  padding: 2.75rem 0 3.5rem;
+  padding: 0 0 3.5rem;
 }
 
 main:focus {
@@ -375,34 +375,66 @@ h2 {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: 0.85rem;
-  padding: 1.1rem 1.15rem 1.15rem;
+  background: #1a1a1a;
+  color: #f4f6f8;
+  border: 0;
+  border-radius: 0;
+  padding: 1.15rem 1.15rem 1.7rem;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 26px) 100%, 0 100%);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 6px;
+  background: #e65f00;
+  clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
 }
 
 .card p {
   margin: 0;
-  color: var(--muted);
+  color: #d5d5d5;
   flex: 1;
 }
 
 .card a {
+  color: #fed39d;
   font-weight: 650;
   width: fit-content;
 }
 
+.card a:hover {
+  color: #ffffff;
+}
+
 .panel {
+  position: relative;
   margin: 1.5rem 0 1.25rem;
   max-width: 42rem;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--accent);
-  border-radius: 0.75rem;
-  padding: 1rem 1.1rem;
+  background: #1a1a1a;
+  color: #f4f6f8;
+  border: 0;
+  border-radius: 0;
+  padding: 1.05rem 1.15rem 1.15rem 1.35rem;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 22px) 100%, 0 100%);
+}
+
+.panel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: #e65f00;
+  clip-path: polygon(0 0, 100% 14%, 100% 86%, 0 100%);
 }
 
 .panel p {
@@ -454,12 +486,8 @@ h2 {
     justify-content: center;
   }
 
-  main {
-    padding-top: 2rem;
-  }
-
   nav a {
-    padding: 0.55rem 0.45rem;
+    padding: 0.65rem 0.55rem;
   }
 }
 
@@ -470,5 +498,296 @@ h2 {
 
   .theme-icon {
     transition: none;
+  }
+
+  .shot img,
+  .hero-media img {
+    transition: none;
+    transform: none;
+  }
+}
+
+.page-plain {
+  padding-top: 2.75rem;
+}
+
+.hero {
+  margin: 0;
+  background: #1a1a1a;
+  color: #f4f6f8;
+}
+
+.hero-media {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 72vh;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.hero-media picture,
+.hero-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-media img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(26, 26, 26, 0.05) 0%, rgba(26, 26, 26, 0.18) 42%, rgba(26, 26, 26, 0.92) 100%);
+  pointer-events: none;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  padding: 22vh 0 1.8rem;
+}
+
+.hero-copy h1 {
+  max-width: min(16ch, 100%);
+  color: #f6f1e8;
+  font-size: clamp(2.15rem, 6.4vw, 4.5rem);
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55);
+}
+
+.hero-copy .lede {
+  max-width: 36rem;
+  color: #f0ebe3;
+  font-size: 1.15rem;
+}
+
+.hero-copy .kicker {
+  color: #fcb55b;
+}
+
+.hero figcaption {
+  margin: 0;
+  padding: 0.55rem 0 0.7rem;
+  background: #1a1a1a;
+  color: #d7d7d7;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.section > p {
+  max-width: 42rem;
+}
+
+.shot figcaption {
+  margin: 0;
+  padding: 0.55rem 0.75rem 0.7rem;
+  background: #1a1a1a;
+  color: #d7d7d7;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.band {
+  position: relative;
+  background: #1a1a1a;
+  color: #f4f6f8;
+  padding: 2.1rem 0 2.5rem;
+  margin: 0 0 2.4rem;
+}
+
+.band::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -14px;
+  height: 14px;
+  background: #e65f00;
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+}
+
+.band .kicker {
+  color: #e65f00;
+}
+
+.band h2,
+.band p {
+  color: #f4f6f8;
+}
+
+.band p {
+  max-width: 42rem;
+}
+
+.band a {
+  color: #fed39d;
+}
+
+.band a:hover {
+  color: #ffffff;
+}
+
+.section {
+  margin: 0 0 2.6rem;
+}
+
+.section h2 {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  margin-bottom: 0.7rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.1rem 0 0;
+}
+
+.shot {
+  margin: 0;
+  background: #1a1a1a;
+  min-width: 0;
+}
+
+.shot-wide {
+  grid-column: 1 / -1;
+}
+
+.shot-frame {
+  overflow: hidden;
+  background: #111;
+  line-height: 0;
+}
+
+.shot-frame picture {
+  display: block;
+}
+
+.shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.65s ease;
+}
+
+.shot:hover img {
+  transform: scale(1.045);
+}
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.people li {
+  position: relative;
+  background: #1a1a1a;
+  color: #f4f6f8;
+  padding: 1rem 0.95rem 1.05rem;
+}
+
+.people li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46%;
+  height: 6px;
+  background: #e65f00;
+  clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+}
+
+.people strong {
+  display: block;
+  font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.people span {
+  color: #d5d5d5;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+.split article {
+  position: relative;
+  background: #1a1a1a;
+  color: #f4f6f8;
+  border: 0;
+  padding: 1.05rem 1.05rem 1.15rem;
+}
+
+.split article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 6px;
+  background: #e65f00;
+  clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
+}
+
+.split h3 {
+  margin: 0 0 0.4rem;
+  font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: #f4f6f8;
+}
+
+.split p {
+  margin: 0;
+  color: #d5d5d5;
+}
+
+@media (max-width: 800px) {
+  .gallery,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .shot-wide {
+    grid-column: auto;
+  }
+
+  .hero-media {
+    min-height: 64vh;
+  }
+
+  .hero-copy {
+    padding-top: 16vh;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.15rem, 11vw, 3.1rem);
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-copy .lede {
+    font-size: 1.02rem;
+  }
+
+  nav ul {
+    gap: 0.1rem;
   }
 }

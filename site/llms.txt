@@ -1,0 +1,60 @@
+# Autonomicity Games
+
+> Autonomicity Games Inc. was founded in Canada on March 17, 2016, and is stewarded by its founder, Sherif Botros. The name has been a play on AGI since 2016. The public site is https://acitygames.com.
+
+## Pages
+
+- Home: https://acitygames.com/
+- About: https://acitygames.com/about.html
+- Powrush-MMO: https://acitygames.com/powrush.html
+- Rathor.ai: https://acitygames.com/rathor.html
+- Careers: https://acitygames.com/careers.html
+- Contact: https://acitygames.com/contact.html
+
+## Company
+
+- Sherif Botros is the founder and current steward of Autonomicity Games Inc.
+- Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
+- Partners: staying independent while the vision took shape.
+
+## Powrush-MMO
+
+- Powrush has been under development since 2016 by Autonomicity Games.
+- Walk a climate. Harvest with mercy. Learn a resource-based economy by playing.
+- One human, one machine. Offline first. Title Online stays grey.
+- The current build is offline and single-player, and it is in active development. Online is not live yet. There is no Steam page and no release date.
+- A post-apocalyptic world with a resource-based economy and a faction system that lets you be as diplomatic as you like.
+- Five peoples share an ever-evolving world: Human, Quellorian, Draek, Cydruid and Ambrosian.
+- Open World Experience — Craft your unique story and quests by organically flowing through your desires.
+- Freedom of choice to be peaceful, or to start wars.
+- Repository: https://github.com/Eternally-Thriving-Grandmasterism/Powrush-MMO
+
+## Peoples
+
+Canon five: Human, Quellorian, Draek, Cydruid, Ambrosian.
+
+- Human: Choose flow or reserve.
+- Quellorian: Flow restores the well. Harmony is shared field. The Quellorian / Aetherion Luminari Alliance is a coalition centered around light, resonance technology, unity, and progressive evolution. Their mothership is the Auroral Unification Nexus (TAUN).
+- Draek: Take without rest stresses the well. The Draek Dominion is a predatory, hivemind-driven empire. The Brood Spire is its tall, dark domination hub. The Crownstone is a large glowing purple crystal at the center of the Hivelord’s helmet.
+- Cydruid: Mend / Offer. Cydruids weave living networks that heal, protect, and restore. Cydruid dress is a human housed in a cyborg frame. Teal and leaf-metal are trim and metal accents, not bark-skin. Nature is practice, not species.
+- Ambrosian: Attune. The well sings or cracks. Core philosophy: Attunement over Domination. Humanoid but elongated and elegant, with visible internal crystal lattices that glow.
+
+## Pictures
+
+The site shows concept art and trailer art only. The paintings are not gameplay and are not screenshots of the current build.
+
+## Rathor.ai
+
+- Rathor.ai is a separate site on purpose: https://rathor.ai
+- Independent of xAI · Not certified
+
+## Careers
+
+Autonomicity Games plans to hire, executives included. Write to info@acitygames.com or info@Rathor.ai.
+
+## Contact
+
+- info@acitygames.com
+- info@Rathor.ai
+
+Contact: info@Rathor.ai
