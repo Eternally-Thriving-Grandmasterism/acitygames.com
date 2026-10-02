@@ -24,7 +24,7 @@
 - One human, one machine. Offline first. Title Online stays grey.
 - The current build is offline and single-player, and it is in active development. Online is not live yet. There is no Steam page and no release date.
 - A post-apocalyptic world with a resource-based economy and a faction system that lets you be as diplomatic as you like.
-- Play as Human, Quellorian, Draek, Cydruid & Ambrosian in an Ever Evolving World.
+- Five peoples share an ever-evolving world: Human, Quellorian, Draek, Cydruid and Ambrosian.
 - Open World Experience — Craft your unique story and quests by organically flowing through your desires.
 - Freedom of choice to be peaceful, or to start wars.
 - Repository: https://github.com/Eternally-Thriving-Grandmasterism/Powrush-MMO
