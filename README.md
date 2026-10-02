@@ -18,7 +18,7 @@ Links are relative, so the same files work on the GitHub Pages project URL and, 
 
 ## What is on the site
 
-Home, About, Powrush-MMO, Rathor.ai, Careers, and Contact. The pages are plain HTML and CSS: no build step, no trackers, and no external fonts.
+Home, About, Powrush-MMO, Rathor.ai, Careers, and Contact. The pages are plain HTML, CSS and one small theme script, with no trackers and no external requests, and no external fonts.
 
 Contact: [info@Rathor.ai](mailto:info@Rathor.ai)
 

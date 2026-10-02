@@ -5,22 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Careers — Autonomicity Games</title>
   <meta name="description" content="Autonomicity Games plans to hire, executives included. Write to info@acitygames.com or info@Rathor.ai.">
-  <meta name="theme-color" content="#101318">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f1e8" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script>
+    (function () {
+      var theme = "dark";
+      try {
+        var stored = localStorage.getItem("acity-theme");
+        if (stored === "light" || stored === "dark") theme = stored;
+        else if (window.matchMedia("(prefers-color-scheme: light)").matches) theme = "light";
+      } catch (e) {}
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
-    <div class="wrap bar">
-      <a class="brand" href="index.html">
-        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="7" fill="#181d27"/>
-          <path d="M8 24 L16 7 L24 24" fill="none" stroke="#e4b15a" stroke-width="2.4" stroke-linejoin="round"/>
-          <path d="M11.2 18.2 H20.8" fill="none" stroke="#f4f6f8" stroke-width="2.2" stroke-linecap="round"/>
-        </svg>
-        Autonomicity Games
+    <div class="logo-tab">
+      <a class="logo-link" href="index.html">
+        <img src="images/logo-512.png" srcset="images/logo-512.png 1x, images/logo-1024.png 2x" alt="Autonomicity Games logo" width="512" height="585">
       </a>
+    </div>
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Autonomicity Games</a>
       <nav aria-label="Primary">
         <ul>
           <li><a href="about.html">About</a></li>
@@ -29,6 +40,17 @@
           <li><a href="careers.html" aria-current="page">Careers</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button type="button" class="theme-toggle" id="theme-toggle" hidden aria-pressed="false" aria-label="Switch to light mode">
+          <span class="theme-toggle-icons" aria-hidden="true">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="12" r="4.1"></circle>
+              <path d="M12 2.6v2.2M12 19.2v2.2M4.8 4.8l1.6 1.6M17.6 17.6l1.6 1.6M2.6 12h2.2M19.2 12h2.2M4.8 19.2l1.6-1.6M17.6 6.4l1.6-1.6" fill="none"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+              <path d="M15.2 3.4A8.2 8.2 0 1 0 20.6 14 6.4 6.4 0 0 1 15.2 3.4z"></path>
+            </svg>
+          </span>
+        </button>
       </nav>
     </div>
   </header>
@@ -41,9 +63,11 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
+      <img class="footer-mark" src="images/logo-512.png" srcset="images/logo-512.png 1x, images/logo-1024.png 2x" alt="Autonomicity Games logo" width="512" height="585">
       <p>© 2026 Autonomicity Games Inc.</p>
       <p><a href="mailto:info@acitygames.com">info@acitygames.com</a> or <a href="mailto:info@Rathor.ai">info@Rathor.ai</a></p>
     </div>
   </footer>
+  <script src="js/theme.js" defer></script>
 </body>
 </html>
