@@ -1,0 +1,262 @@
+:root {
+  color-scheme: dark;
+  --bg: #101318;
+  --bg-elev: #181d27;
+  --line: #2c3444;
+  --text: #f4f6f8;
+  --muted: #c5ceda;
+  --accent: #e4b15a;
+  --accent-ink: #1c1408;
+  --link: #f3d7a6;
+  --focus: #ffe38a;
+  --max: 70rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(1200px 420px at 10% -10%, rgba(228, 177, 90, 0.08), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  transform: translateY(-160%);
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.4rem;
+  z-index: 5;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.skip:focus {
+  transform: none;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 0.2rem;
+}
+
+.wrap {
+  width: min(var(--max), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 16, 21, 0.92);
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  padding: 0.85rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 680;
+  letter-spacing: 0.01em;
+}
+
+.mark {
+  width: 1.7rem;
+  height: 1.7rem;
+  flex: none;
+}
+
+.brand:focus-visible {
+  outline-offset: 4px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.45rem 0.55rem;
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: 0.35rem;
+}
+
+nav a[aria-current="page"] {
+  color: var(--text);
+  background: #242b38;
+}
+
+main {
+  flex: 1;
+  padding: 2.75rem 0 3.5rem;
+}
+
+main:focus {
+  outline: none;
+}
+
+.kicker {
+  margin: 0 0 0.6rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 680;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 0.85rem;
+  font-size: clamp(2.05rem, 5vw, 3.35rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  max-width: 18ch;
+}
+
+h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.lede,
+.prose p {
+  max-width: 42rem;
+}
+
+.lede {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.prose p {
+  margin: 0 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.9rem;
+  margin-top: 2.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  padding: 1.1rem 1.15rem 1.15rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  flex: 1;
+}
+
+.card a {
+  font-weight: 650;
+  width: fit-content;
+}
+
+.panel {
+  margin: 1.5rem 0 1.25rem;
+  max-width: 42rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 0.75rem;
+  padding: 1rem 1.1rem;
+}
+
+.panel p {
+  margin: 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0 1.6rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 0.15rem 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: min(var(--max), calc(100% - 1.5rem));
+  }
+
+  main {
+    padding-top: 2rem;
+  }
+
+  nav a {
+    padding: 0.55rem 0.45rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
