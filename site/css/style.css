@@ -39,24 +39,27 @@
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
     color-scheme: light;
-    --bg: #f6f1e8;
-    --bg-elev: #fffaf3;
-    --line: #d9d0c4;
-    --text: #3d3832;
-    --muted: #5c564e;
-    --link: #9a3400;
+    --bg: #e3cdb0;
+    --bg-elev: #f1e4cc;
+    --line: #74553d;
+    --text: #3e2a1c;
+    --muted: #53402d;
+    --link: #8f3100;
     --link-hover: #6e2800;
-    --focus: #9a3400;
-    --nav-current: #e7dfd3;
-    --kicker: #9a3400;
+    --focus: #8f3100;
+    --nav-current: #d7c09a;
+    --kicker: #8f3100;
     --heading: var(--link);
-    --toggle-border: #8a7d6c;
-    --toggle-bg: #fffaf3;
-    --toggle-color: #9a3400;
-    --soft: #5c564e;
-    --caption: #5c564e;
-    --frame: #f6f1e8;
-    --hero-kicker: #f6f1e8;
+    --accent: #bf4c00;
+    --skip-bg: #8f3100;
+    --skip-ink: #f1e4cc;
+    --toggle-border: #bf4c00;
+    --toggle-bg: #f1e4cc;
+    --toggle-color: #8f3100;
+    --soft: #4c3a29;
+    --caption: #53402d;
+    --frame: #dcc6a4;
+    --hero-kicker: #f4e6cc;
   }
 }
 
@@ -84,24 +87,27 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
   color-scheme: light;
-  --bg: #f6f1e8;
-  --bg-elev: #fffaf3;
-  --line: #d9d0c4;
-  --text: #3d3832;
-  --muted: #5c564e;
-  --link: #9a3400;
+  --bg: #e3cdb0;
+  --bg-elev: #f1e4cc;
+  --line: #74553d;
+  --text: #3e2a1c;
+  --muted: #53402d;
+  --link: #8f3100;
   --link-hover: #6e2800;
-  --focus: #9a3400;
-  --nav-current: #e7dfd3;
-  --kicker: #9a3400;
+  --focus: #8f3100;
+  --nav-current: #d7c09a;
+  --kicker: #8f3100;
   --heading: var(--link);
-  --toggle-border: #8a7d6c;
-  --toggle-bg: #fffaf3;
-  --toggle-color: #9a3400;
-  --soft: #5c564e;
-  --caption: #5c564e;
-  --frame: #f6f1e8;
-  --hero-kicker: #f6f1e8;
+  --accent: #bf4c00;
+  --skip-bg: #8f3100;
+  --skip-ink: #f1e4cc;
+  --toggle-border: #bf4c00;
+  --toggle-bg: #f1e4cc;
+  --toggle-color: #8f3100;
+  --soft: #4c3a29;
+  --caption: #53402d;
+  --frame: #dcc6a4;
+  --hero-kicker: #f4e6cc;
 }
 
 *,
@@ -866,3 +872,45 @@ h2 {
 .old-site-quote footer { font-size: 0.9em; color: var(--muted); }
 .old-site-quote ol { padding-left: 1.25rem; }
 .old-site-quote li { margin: 0.5rem 0; }
+
+html[data-theme="light"] .band,
+html[data-theme="light"] .card,
+html[data-theme="light"] .panel,
+html[data-theme="light"] .people li,
+html[data-theme="light"] .split article {
+  background: var(--bg-elev);
+}
+
+html[data-theme="light"] .footer-mark {
+  background: transparent;
+}
+
+html[data-theme="light"] .skip,
+html[data-theme="light"] .skip:hover,
+html[data-theme="light"] .skip:focus-visible {
+  background: var(--skip-bg);
+  color: var(--skip-ink);
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .band,
+  :root:not([data-theme]) .card,
+  :root:not([data-theme]) .panel,
+  :root:not([data-theme]) .people li,
+  :root:not([data-theme]) .split article {
+    background: var(--bg-elev);
+  }
+
+  :root:not([data-theme]) .footer-mark {
+    background: transparent;
+  }
+
+  :root:not([data-theme]) .skip,
+  :root:not([data-theme]) .skip:hover,
+  :root:not([data-theme]) .skip:focus-visible {
+    background: var(--skip-bg);
+    color: var(--skip-ink);
+    text-decoration: none;
+  }
+}
