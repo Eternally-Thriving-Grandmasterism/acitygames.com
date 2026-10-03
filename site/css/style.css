@@ -476,6 +476,17 @@ h2 {
   margin: 0.15rem 0;
 }
 
+.footer-channels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.15rem;
+  max-width: 42rem;
+}
+
+.footer-channels a {
+  color: var(--link);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
