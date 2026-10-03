@@ -652,6 +652,11 @@ h2 {
   margin: 0 0 2.6rem;
 }
 
+/* .section's margin shorthand would cancel .wrap's inline auto margins */
+.section.wrap {
+  margin-inline: auto;
+}
+
 .section h2 {
   font-size: clamp(1.45rem, 3vw, 2rem);
   margin-bottom: 0.7rem;
@@ -801,6 +806,10 @@ h2 {
 @media (max-width: 390px) {
   .hero-copy .lede {
     font-size: 1.02rem;
+  }
+
+  .hero-copy .kicker-era + .kicker-era {
+    display: block;
   }
 
   nav ul {
