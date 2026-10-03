@@ -35,7 +35,7 @@
 - In the offline hour a well can be idle, glowing, tended, resting, or stressed.
 - It is an open world. You craft your unique story and quests by flowing through your desires.
 - Powrush has been under development since 2016 by Autonomicity Games.
-- When the subject is the build, the look is gritty low-poly form and high-detail light: desaturated earth, and one accent for the place.
+- When the subject is the build, the look is gritty low-poly volume and high-detail light: desaturated earth, and one accent for the place.
 - Repository: https://github.com/Eternally-Thriving-Grandmasterism/Powrush-MMO
 
 ## Peoples
