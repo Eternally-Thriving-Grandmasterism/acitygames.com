@@ -807,3 +807,9 @@ h2 {
     gap: 0.1rem;
   }
 }
+
+/* ACITY-COPY-3: verbatim quotes from the earlier site */
+.old-site-quote { margin: 1.25rem 0; padding: 0.75rem 1.25rem; border-left: 3px solid var(--accent, currentColor); }
+.old-site-quote footer { font-size: 0.9em; opacity: 0.8; }
+.old-site-quote ol { padding-left: 1.25rem; }
+.old-site-quote li { margin: 0.5rem 0; }
