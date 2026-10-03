@@ -1,6 +1,6 @@
 # Autonomicity Games
 
-> Autonomicity Games Inc. was founded in Canada on March 17, 2016, and is stewarded by its founder, Sherif Botros. The name has been a play on AGI since 2016. The public site is https://acitygames.com.
+> Autonomicity Games Inc. was founded in Canada on March 17, 2016, and is stewarded by its founder, Sherif Botros. The name has been a play on AGI since 2016. Since 2003 he has followed TOLC (True Original Lord Creator), his north star. The public site is https://acitygames.com.
 
 ## Pages
 
@@ -15,10 +15,10 @@
 
 - Sherif Botros is the founder and current steward of Autonomicity Games Inc.
 - Autonomicity Games was founded in Canada on March 17, 2016. The name has been a play on AGI since 2016.
-- Since 2003, Sherif Botros has worked, on his own, toward solving the world's problems, including global diplomacy and realistic abundance, by working out and following TOLC (True Original Lord Creator), his north star.
-- That work led to the video game Powrush. Building Powrush led to Ra-Thor, the system behind Rathor.ai. Ra-Thor now helps build Powrush-MMO and new projects like the Living Thunder comic and animated series.
+- Since 2003, Sherif Botros has worked on his own toward the world's problems, including global diplomacy and realistic abundance, by working out and following TOLC (True Original Lord Creator), his north star.
+- That work led to the video game Powrush. Building Powrush led to Ra-Thor, the system behind Rathor.ai. Ra-Thor now helps build Powrush-MMO, and new projects like the Living Thunder comic and animated series.
 - Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
-- Partners: staying independent while the vision took shape.
+- While the vision took shape, the company stayed independent.
 
 ## Powrush-MMO
 
@@ -26,21 +26,21 @@
 - Walk a climate. Harvest with mercy. Learn a resource-based economy by playing.
 - One human, one machine. Offline first. Title Online stays grey.
 - The current build is offline and single-player, and it is in active development. Online is not live yet. There is no Steam page and no release date.
-- A post-apocalyptic world with a resource-based economy and a faction system that lets you be as diplomatic as you like.
+- The world is post-apocalyptic, with a resource-based economy you learn by playing, and a faction system that lets you be as diplomatic as you like.
 - Five peoples share an ever-evolving world: Human, Quellorian, Draek, Cydruid and Ambrosian.
-- Open World Experience — Craft your unique story and quests by organically flowing through your desires.
-- Freedom of choice to be peaceful, or to start wars.
+- It is an open world. You craft your unique story and quests by flowing through your desires.
+- You are free to be peaceful, or to start wars.
 - Repository: https://github.com/Eternally-Thriving-Grandmasterism/Powrush-MMO
 
 ## Peoples
 
-Canon five: Human, Quellorian, Draek, Cydruid, Ambrosian.
+The canon names five peoples: Human, Quellorian, Draek, Cydruid, Ambrosian.
 
 - Human: Choose flow or reserve.
-- Quellorian: Flow restores the well. Harmony is shared field. The Quellorian / Aetherion Luminari Alliance is a coalition centered around light, resonance technology, unity, and progressive evolution. Their mothership is the Auroral Unification Nexus (TAUN).
-- Draek: Take without rest stresses the well. The Draek Dominion is a predatory, hivemind-driven empire. The Brood Spire is its tall, dark domination hub. The Crownstone is a large glowing purple crystal at the center of the Hivelord’s helmet.
-- Cydruid: Mend / Offer. Cydruids weave living networks that heal, protect, and restore. A Cydruid is a human who chooses how much stays human. Limbs, then torso, are swapped for machine part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. Cydruids are not treants and not tree people. Nature is practice, not species.
-- Ambrosian: Attune. The well sings or cracks. Core philosophy: Attunement over Domination. Humanoid but elongated and elegant, with visible internal crystal lattices that glow.
+- Quellorian: Flow restores the well. Harmony is a shared field. The Quellorian / Aetherion Luminari Alliance is a coalition of advanced species, centered on light, resonance technology, unity, and progressive evolution. Their mothership is the Auroral Unification Nexus (TAUN), a radial form with blue-white auroral light, a symbol of hope and of ordered power.
+- Draek: Take without rest, and the well is stressed. The Draek Dominion is a predatory, hivemind-driven empire that seeks domination through mind control, consumption, and overwhelming force. The Brood Spire is a tall, dark megastructure and the hub of that domination. The Crownstone is a large purple crystal that glows at the center of the Hivelord's helmet.
+- Cydruid: Mend. Offer. Cydruids are one of the five core playable races. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." A Cydruid is a human who chooses how much stays human. Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg. That upgrade path is open to every human. Machine parts mean fewer infections and bionic powers. Nature is a practice, not a species.
+- Ambrosian: Attune. The well sings, or it cracks. Core philosophy: Attunement over Domination. Humanoid, elongated and elegant, with visible internal crystal lattices that glow.
 
 ## Pictures
 
@@ -48,13 +48,14 @@ The site shows concept art and trailer art only. The paintings are not gameplay 
 
 ## Rathor.ai
 
-- Rathor.ai is a separate site on purpose: https://rathor.ai
-- Rathor.ai is built to get the most effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas.
-- Independent of xAI · Not certified
+- Rathor.ai is a separate site on purpose, and the public face of Ra-Thor: https://rathor.ai
+- Building Powrush led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. Living Thunder, the comic and animated series, grew from that work.
+- Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas.
+- Independent of xAI. Not certified.
 
 ## Careers
 
-Autonomicity Games plans to hire, executives included. If you share the mission, write to careers@acitygames.com with who you are and what you would build.
+Autonomicity Games plans to hire, executives included. If you share the mission, write to careers@acitygames.com. Say who you are, and what you would build.
 
 ## Contact
 
