@@ -45,7 +45,7 @@ Five peoples: Human, Quellorian, Draek, Cydruid, Ambrosian.
 - Human: Survivors caught between two cosmic powers. We endure. We choose. We become. Choose flow or reserve. Accent on the build: warm grey-gold.
 - Quellorian: Resonance masters of light and unity. Through harmony, we transcend. Flow restores the well. The Quellorian / Aetherion Luminari Alliance is a coalition of advanced species, centered on light, resonance technology, unity, and progressive evolution. Their mothership is the Auroral Unification Nexus (TAUN), a radial form with blue-white auroral light, a symbol of hope and of ordered power. Accent: iridescent violet / pink and pale gold.
 - Draek: A hivemind empire of consumption and domination. All will be one in the Brood. Take without rest, and the well is stressed. The Draek Dominion is a predatory, hivemind-driven empire that seeks domination through mind control, consumption, and overwhelming force. The Brood Spire is a tall, dark megastructure and the hub of that domination. The Crownstone is a large purple crystal that glows at the center of the Hivelord's helmet. Accent: dry red / bronze.
-- Cydruid: A human in a cyborg frame. The frame is worn. The person remains. Mend. Offer. They mend, and they offer. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. Nature is a practice, not a species. Trim is teal and leaf-metal, metal accents on a human frame.
+- Cydruid: A human in a cyborg frame. The frame is worn. The person remains. Mend. Offer. They mend, and they offer. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. The person is not a tree. Nature is a practice, not a species. Trim is teal and leaf-metal, metal accents on a human frame.
 - Ambrosian: Living embodiments of harmonic attunement. We are the note, the chord, the song. The well sings, or it cracks. Crystalline-organic beings. Core philosophy: Attunement over Domination. Humanoid, elongated and elegant, with visible internal crystal lattices that glow. Accent word: prism cool.
 
 ## Pictures
@@ -54,7 +54,7 @@ The site shows concept art and trailer art only. The paintings are the world as 
 
 ## Rathor.ai
 
-- Ra-Thor can read the hour you played. It does not play that hour for you.
+- Ra-Thor may read the hour you played. It does not play that hour for you.
 - Rathor.ai is a separate site on purpose, and the public face of Ra-Thor: https://rathor.ai
 - Building Powrush led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. Living Thunder, the comic and animated series, grew from that work.
 - Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas. A human overrides every output.
