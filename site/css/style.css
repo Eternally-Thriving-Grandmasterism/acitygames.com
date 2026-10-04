@@ -870,7 +870,8 @@ h2 {
 /* ACITY-LIGHT-1 (staged on Home via body.stage-light-1).
    Sitewide rollout: drop the ".stage-light-1" scope from these selectors.
    Wash colours sampled from images/art/about-quellorian-city-ships-1500.webp;
-   orange from images/logo-512.png. */
+   orange from images/logo-512.png (dark mode + hero kicker).
+   Light accents: violet, ocean-teal and sunset-magenta hues from the same art. */
 .stage-light-1 {
   --kicker: #fd8831;
   --hero-kicker: #fd8831;
@@ -885,24 +886,26 @@ html[data-theme="light"] .stage-light-1 {
   --muted: #4a4e66;
   --soft: #4a4e66;
   --caption: #4a4e66;
-  --link: #9a3400;
-  --link-hover: #6e2800;
-  --focus: #c25a00;
-  --kicker: #ac4a02;
-  --h2: #9a5703;
+  --link: #036997;
+  --link-hover: #024a6b;
+  --heading: #7129fa;
+  --focus: #d63384;
+  --kicker: #be0572;
+  --h2: #7129fa;
+  --toggle-color: #7129fa;
   --nav-current: rgba(255, 255, 255, 0.5);
   --toggle-bg: rgba(255, 255, 255, 0.55);
   --toggle-border: #6b6f86;
   --logo-backdrop: transparent;
-  --wash-base: #eee7f4;
+  --wash-base: #e9e1f0;
   --wash:
-    radial-gradient(70% 22% at 8% 2%, rgba(238, 231, 244, 0.95), rgba(238, 231, 244, 0) 100%),
-    radial-gradient(65% 20% at 96% 10%, rgba(228, 234, 251, 0.95), rgba(228, 234, 251, 0) 100%),
-    radial-gradient(80% 18% at 4% 36%, rgba(248, 233, 237, 0.9), rgba(248, 233, 237, 0) 100%),
-    radial-gradient(75% 20% at 100% 58%, rgba(231, 246, 236, 0.9), rgba(231, 246, 236, 0) 100%),
-    radial-gradient(85% 20% at 20% 80%, rgba(228, 234, 251, 0.85), rgba(228, 234, 251, 0) 100%),
-    radial-gradient(90% 18% at 70% 100%, rgba(253, 245, 221, 0.95), rgba(253, 245, 221, 0) 100%),
-    linear-gradient(180deg, #eee7f4 0%, #e4eafb 22%, #f8e9ed 44%, #e7f6ec 66%, #eee7f4 84%, #fdf5dd 100%);
+    radial-gradient(70% 22% at 8% 2%, rgba(233, 225, 240, 0.95), rgba(233, 225, 240, 0) 100%),
+    radial-gradient(65% 20% at 96% 10%, rgba(221, 229, 249, 0.95), rgba(221, 229, 249, 0) 100%),
+    radial-gradient(80% 18% at 4% 36%, rgba(246, 227, 232, 0.9), rgba(246, 227, 232, 0) 100%),
+    radial-gradient(75% 20% at 100% 58%, rgba(223, 243, 230, 0.9), rgba(223, 243, 230, 0) 100%),
+    radial-gradient(85% 20% at 20% 80%, rgba(221, 229, 249, 0.85), rgba(221, 229, 249, 0) 100%),
+    radial-gradient(90% 18% at 70% 100%, rgba(252, 242, 212, 0.95), rgba(252, 242, 212, 0) 100%),
+    linear-gradient(180deg, #e9e1f0 0%, #dde5f9 22%, #f6e3e8 44%, #dff3e6 66%, #e9e1f0 84%, #fcf2d4 100%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -914,15 +917,19 @@ html[data-theme="light"] .stage-light-1 {
     --muted: #4a4e66;
     --soft: #4a4e66;
     --caption: #4a4e66;
-    --focus: #c25a00;
-    --kicker: #ac4a02;
-    --h2: #9a5703;
+    --link: #036997;
+    --link-hover: #024a6b;
+    --heading: #7129fa;
+    --focus: #d63384;
+    --kicker: #be0572;
+    --h2: #7129fa;
+    --toggle-color: #7129fa;
     --nav-current: rgba(255, 255, 255, 0.5);
     --toggle-bg: rgba(255, 255, 255, 0.55);
     --toggle-border: #6b6f86;
     --logo-backdrop: transparent;
-    --wash-base: #eee7f4;
-    --wash: linear-gradient(180deg, #eee7f4 0%, #e4eafb 22%, #f8e9ed 44%, #e7f6ec 66%, #eee7f4 84%, #fdf5dd 100%);
+    --wash-base: #e9e1f0;
+    --wash: linear-gradient(180deg, #e9e1f0 0%, #dde5f9 22%, #f6e3e8 44%, #dff3e6 66%, #e9e1f0 84%, #fcf2d4 100%);
   }
 }
 
@@ -934,7 +941,7 @@ body.stage-light-1 {
 }
 
 html[data-theme="light"]:has(> body.stage-light-1) {
-  background: #eee7f4;
+  background: #e9e1f0;
 }
 
 .stage-light-1 .logo-tab,
