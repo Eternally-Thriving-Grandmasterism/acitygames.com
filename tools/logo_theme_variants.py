@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
-# LOGO-3D-1 generator. Usage: python3 tools/logo_theme_variants.py site/images/logo-1024.png dark out.png
-# Then save as lossless WebP (exact=True). Needs numpy, scipy, Pillow.
+# LOGO-3D-1 generator. Needs numpy, scipy, Pillow.
+# Usage: python3 tools/logo_theme_variants.py SRC.png {dark|light} DST
+# A DST ending in .webp is written as lossless WebP (lossless=True, exact=True,
+# method=6), which is how site/images/logo-{dark,light}-{512,1024}.webp were
+# made. Any other extension is written by Pillow in that format (e.g. .png,
+# optimize=True), also lossless.
 """Recolour and re-shade the crest inside its original alpha mask.
 The alpha channel is copied byte-for-byte, so the silhouette is pixel-identical."""
 import sys
@@ -80,4 +84,8 @@ def render(src, theme):
 
 if __name__ == '__main__':
     src, theme, dst = sys.argv[1:4]
-    Image.fromarray(render(src, theme), 'RGBA').save(dst, optimize=True)
+    img = Image.fromarray(render(src, theme), 'RGBA')
+    if dst.lower().endswith('.webp'):
+        img.save(dst, 'WEBP', lossless=True, quality=100, method=6, exact=True)
+    else:
+        img.save(dst, optimize=True)
