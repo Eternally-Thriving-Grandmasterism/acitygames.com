@@ -21,7 +21,7 @@
   --hero-soft: #efebe7;
   --hero-kicker: var(--logo-outline);
   --hero-chip: rgba(14, 12, 10, 0.84);
-  --hero-title-fill: linear-gradient(180deg, #ffe2b4 0%, #fbb15b 26%, #fd8831 62%, #e5691a 100%);
+  --hero-title-fill: linear-gradient(180deg, #fff0d6 0%, #fed39d 18%, #fdb55c 40%, #fd8831 66%, #e5691a 100%);
   --logo-slash: linear-gradient(180deg, #fed39d 0%, #fd8831 55%, #d65a12 100%);
   color-scheme: dark;
   --bg: #131211;
@@ -82,9 +82,9 @@
     --kicker: #55607a;
     --kicker-fill: linear-gradient(180deg, #4a5368 0%, #55607a 46%, #4a5368 100%);
     --heading: #6a4fc4;
-    --heading-fill: linear-gradient(180deg, #4f3f8f 0%, #5e48ad 24%, #6a4fc4 46%, #5e48ad 62%, #4a3a86 100%);
-    --heading-emboss: drop-shadow(1px 0 0 rgba(47, 39, 102, 0.6)) drop-shadow(-1px 0 0 rgba(47, 39, 102, 0.6)) drop-shadow(0 1px 0 rgba(47, 39, 102, 0.6)) drop-shadow(0 -1px 0 rgba(47, 39, 102, 0.6)) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 rgba(47, 39, 102, 0.55)) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
-    --name-emboss: drop-shadow(1px 0 0 rgba(47, 39, 102, 0.32)) drop-shadow(-1px 0 0 rgba(47, 39, 102, 0.32)) drop-shadow(0 1px 0 rgba(47, 39, 102, 0.32)) drop-shadow(0 -1px 0 rgba(47, 39, 102, 0.32)) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 rgba(47, 39, 102, 0.55)) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
+    --heading-fill: linear-gradient(180deg, #c9bdf5 0%, #a996ec 28%, #efeaff 46%, #9c87e6 62%, #8670dc 100%);
+    --heading-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
+    --name-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
     --kicker-emboss: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 rgba(43, 49, 64, 0.4)) drop-shadow(0 1px 1px rgba(30, 32, 44, 0.15));
     --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 32, 44, 0.24) 100%), linear-gradient(90deg, #b8892b 0%, #e6c77a 20%, #fff7e0 32%, #d4af5a 46%, #b9bec8 66%, #f4f6f9 78%, #8e95a3 100%);
     --accent-bar-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(30, 32, 44, 0.38), inset 1px 0 0 rgba(255, 255, 255, 0.4);
@@ -163,9 +163,9 @@ html[data-theme="light"] {
   --kicker: #55607a;
   --kicker-fill: linear-gradient(180deg, #4a5368 0%, #55607a 46%, #4a5368 100%);
   --heading: #6a4fc4;
-  --heading-fill: linear-gradient(180deg, #4f3f8f 0%, #5e48ad 24%, #6a4fc4 46%, #5e48ad 62%, #4a3a86 100%);
-  --heading-emboss: drop-shadow(1px 0 0 rgba(47, 39, 102, 0.6)) drop-shadow(-1px 0 0 rgba(47, 39, 102, 0.6)) drop-shadow(0 1px 0 rgba(47, 39, 102, 0.6)) drop-shadow(0 -1px 0 rgba(47, 39, 102, 0.6)) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 rgba(47, 39, 102, 0.55)) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
-  --name-emboss: drop-shadow(1px 0 0 rgba(47, 39, 102, 0.32)) drop-shadow(-1px 0 0 rgba(47, 39, 102, 0.32)) drop-shadow(0 1px 0 rgba(47, 39, 102, 0.32)) drop-shadow(0 -1px 0 rgba(47, 39, 102, 0.32)) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 rgba(47, 39, 102, 0.55)) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
+  --heading-fill: linear-gradient(180deg, #c9bdf5 0%, #a996ec 28%, #efeaff 46%, #9c87e6 62%, #8670dc 100%);
+  --heading-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
+  --name-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
   --kicker-emboss: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 rgba(43, 49, 64, 0.4)) drop-shadow(0 1px 1px rgba(30, 32, 44, 0.15));
   --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 32, 44, 0.24) 100%), linear-gradient(90deg, #b8892b 0%, #e6c77a 20%, #fff7e0 32%, #d4af5a 46%, #b9bec8 66%, #f4f6f9 78%, #8e95a3 100%);
   --accent-bar-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(30, 32, 44, 0.38), inset 1px 0 0 rgba(255, 255, 255, 0.4);
@@ -1145,7 +1145,7 @@ h3,
    logo shape), a short offset extrusion and a soft drop. No plate. */
 html[data-theme="light"] .logo-tab,
 html[data-theme="light"] .footer-mark {
-  filter: drop-shadow(1px 0 0 #2f2766) drop-shadow(-1px 0 0 #2f2766) drop-shadow(0 1px 0 #2f2766) drop-shadow(0 -1px 0 #2f2766) drop-shadow(0 2px 0 rgba(47, 39, 102, 0.45)) drop-shadow(0 4px 5px rgba(30, 32, 44, 0.28));
+  filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 2px 0 rgba(30, 20, 70, 0.6)) drop-shadow(0 4px 5px rgba(30, 32, 44, 0.28));
 }
 
 html[data-theme="light"] .logo-link img {
@@ -1153,13 +1153,13 @@ html[data-theme="light"] .logo-link img {
 }
 
 html[data-theme="light"] .hero-copy h1 {
-  text-shadow: 1px 0 0 #2f2766, -1px 0 0 #2f2766, 0 1px 0 #2f2766, 0 -1px 0 #2f2766, 0 2px 0 #8f3f0c, 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 0 0 #1e1446, -1px 0 0 #1e1446, 0 1px 0 #1e1446, 0 -1px 0 #1e1446, 0 2px 0 #1e1446, 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) .logo-tab,
   :root:not([data-theme]) .footer-mark {
-    filter: drop-shadow(1px 0 0 #2f2766) drop-shadow(-1px 0 0 #2f2766) drop-shadow(0 1px 0 #2f2766) drop-shadow(0 -1px 0 #2f2766) drop-shadow(0 2px 0 rgba(47, 39, 102, 0.45)) drop-shadow(0 4px 5px rgba(30, 32, 44, 0.28));
+    filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 2px 0 rgba(30, 20, 70, 0.6)) drop-shadow(0 4px 5px rgba(30, 32, 44, 0.28));
   }
 
   :root:not([data-theme]) .logo-link img {
@@ -1167,14 +1167,14 @@ html[data-theme="light"] .hero-copy h1 {
   }
 
   :root:not([data-theme]) .hero-copy h1 {
-    text-shadow: 1px 0 0 #2f2766, -1px 0 0 #2f2766, 0 1px 0 #2f2766, 0 -1px 0 #2f2766, 0 2px 0 #8f3f0c, 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 0 0 #1e1446, -1px 0 0 #1e1446, 0 1px 0 #1e1446, 0 -1px 0 #1e1446, 0 2px 0 #1e1446, 0 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   html[data-theme="light"] .hero-copy h1 {
     text-shadow: none;
-    filter: drop-shadow(1px 0 0 #2f2766) drop-shadow(-1px 0 0 #2f2766) drop-shadow(0 1px 0 #2f2766) drop-shadow(0 -1px 0 #2f2766) drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.6)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 2px 0 #2f2766) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
+    filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.6)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
   }
 
   html[data-theme="light"] .worlds-heading {
@@ -1186,11 +1186,46 @@ html[data-theme="light"] .hero-copy h1 {
   @supports ((-webkit-background-clip: text) or (background-clip: text)) {
     :root:not([data-theme]) .hero-copy h1 {
       text-shadow: none;
-      filter: drop-shadow(1px 0 0 #2f2766) drop-shadow(-1px 0 0 #2f2766) drop-shadow(0 1px 0 #2f2766) drop-shadow(0 -1px 0 #2f2766) drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.6)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 2px 0 #2f2766) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
+      filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.6)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
     }
 
     :root:not([data-theme]) .worlds-heading {
       filter: var(--heading-emboss);
+    }
+  }
+}
+
+/* ACITY-METAL-1: the "Autonomicity Games Inc." wordmark in the crest's own 3D
+   orange (sampled from images/logo-512.png: peach #fed39d, body #fdb55c, rim
+   #fd8831, deep #e5691a, burnt edge #8f3f0c / #6e2f08). Dark: glowing bevel and
+   extrusion. Light: adds a 1px deep-purple #1e1446 outline so it reads on the wash. */
+a.brand,
+a.brand:hover,
+a.brand:focus-visible {
+  color: #b85413;
+  font-size: 1.15rem;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  a.brand,
+  a.brand:hover,
+  a.brand:focus-visible {
+    background-image: linear-gradient(180deg, #fff0d6 0%, #fed39d 22%, #fdb55c 46%, #fd8831 70%, #e5691a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 -1px 0 rgba(255, 240, 214, 0.55)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 0 #6e2f08) drop-shadow(0 0 6px rgba(253, 136, 49, 0.35)) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
+  }
+
+  html[data-theme="light"] a.brand {
+    filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.3));
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    :root:not([data-theme]) a.brand {
+      filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.3));
     }
   }
 }
