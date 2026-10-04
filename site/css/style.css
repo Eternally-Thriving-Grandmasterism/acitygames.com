@@ -270,9 +270,10 @@ a:focus-visible,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: min(92vw, calc(var(--mark) * 2.64));
+  width: fit-content;
+  max-width: 92vw;
   margin: 0.35rem auto 0;
-  padding: 0.45rem 18% 0.55rem;
+  padding: 0.45rem 0 0.55rem;
   background: transparent;
 }
 
@@ -289,16 +290,43 @@ a:focus-visible,
   background: transparent;
 }
 
-/* LOGO-THEME-1: the logo artwork (shape, shading, colours) is never
-   filtered or recoloured. Themes only change the light around it: dark mode
-   gets a soft depth shadow plus a faint warm gold glow; light mode (below)
-   gets a soft neutral drop shadow. No outline, no plate. */
+/* LOGO-3D-1: the crest ships as two theme variants (images/logo-dark-*.webp,
+   images/logo-light-*.webp), recoloured and re-shaded in metallic gold inside
+   the original alpha mask, so the silhouette is pixel-identical to
+   images/logo-512.png / logo-1024.png (kept untouched). CSS shows the one that
+   matches the theme: [data-theme] from the toggle wins, otherwise the OS
+   preference. Dark is the default. The hidden one is display:none and
+   loading="lazy", so it is not fetched. No outline, no plate. */
+img.logo-art-light {
+  display: none;
+}
+
+html[data-theme="light"] img.logo-art-dark {
+  display: none;
+}
+
+html[data-theme="light"] img.logo-art-light {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) img.logo-art-dark {
+    display: none;
+  }
+
+  :root:not([data-theme]) img.logo-art-light {
+    display: block;
+  }
+}
+
+/* Dark mode: soft depth shadow plus a warm gold glow; light mode (below)
+   gets a soft neutral drop shadow. */
 .logo-link img {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 14px rgba(240, 199, 104, 0.24));
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 16px rgba(255, 196, 90, 0.3));
 }
 
 .footer-mark {
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(240, 199, 104, 0.2));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(255, 196, 90, 0.26));
 }
 
 .logo-link img {
@@ -1184,37 +1212,41 @@ html[data-theme="light"] .hero-copy h1 {
   }
 }
 
-/* ACITY-METAL-1: the "Autonomicity Games Inc." wordmark in the shared polished
-   gold recipe with the crest's warm orange (sampled from images/logo-512.png: peach #fed39d, body #fdb55c, rim
-   #fd8831, deep #e5691a, burnt edge #8f3f0c / #6e2f08). Dark: glowing bevel and
-   extrusion. Light: adds a 1px deep-purple #1e1446 outline so it reads on the wash. */
+/* LOGO-3D-1: the "Autonomicity Games Inc." wordmark, larger and brighter so it
+   sits in proportion with the crest. Polished gold to logo orange with no dark
+   stops in the fill. Dark: thin orange bevel, soft drop and a warm gold glow.
+   Light: 1px deep royal purple #241654 outline (darker than the fill), a
+   purple extrusion and a soft shadow so it reads on the wash. */
 a.brand,
 a.brand:hover,
 a.brand:focus-visible {
-  color: var(--heading);
-  font-size: 1.15rem;
+  color: #ffc24a;
+  font-size: clamp(1.45rem, 0.85rem + 2.6vw, 2rem);
+  letter-spacing: 0.045em;
+  line-height: 1.15;
+  text-wrap: balance;
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   a.brand,
   a.brand:hover,
   a.brand:focus-visible {
-    background-image: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
+    background-image: linear-gradient(180deg, #fffbea 0%, #ffe9a8 22%, #ffd45e 46%, #ffc03c 62%, #ffa62a 82%, #ff9a24 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 -1px 0 rgba(255, 240, 214, 0.55)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 0 #6e2f08) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(240, 199, 104, 0.2));
+    filter: drop-shadow(0 -1px 0 rgba(255, 250, 232, 0.6)) drop-shadow(0 1px 0 #e0761a) drop-shadow(0 1px 0 #b85413) drop-shadow(0 3px 4px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 12px rgba(255, 196, 90, 0.38));
   }
 
   html[data-theme="light"] a.brand {
-    filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.3));
+    filter: drop-shadow(1px 0 0 #241654) drop-shadow(-1px 0 0 #241654) drop-shadow(0 1px 0 #241654) drop-shadow(0 -1px 0 #241654) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 4px 5px rgba(30, 20, 70, 0.3));
   }
 }
 
 @media (prefers-color-scheme: light) {
   @supports ((-webkit-background-clip: text) or (background-clip: text)) {
     :root:not([data-theme]) a.brand {
-      filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.3));
+      filter: drop-shadow(1px 0 0 #241654) drop-shadow(-1px 0 0 #241654) drop-shadow(0 1px 0 #241654) drop-shadow(0 -1px 0 #241654) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 4px 5px rgba(30, 20, 70, 0.3));
     }
   }
 }
