@@ -4,9 +4,10 @@
    Theme keys follow style.css: dark in :root, light under
    prefers-color-scheme without data-theme, then html[data-theme]. */
 
-/* WORLDS-REGAL-1: headings and card titles reuse ACITY-METAL-1's one gold
-   recipe (--heading-fill) and emboss (--heading-emboss: soft glow in dark,
-   1px #1e1446 royal-purple outline in light). Only focus and lift live here. */
+/* WORLDS-REGAL-1 / WORDMARK-METAL-1: headings and card titles reuse the
+   shared logo metal from style.css (--heading-fill = --metal-fill,
+   --heading-emboss = --metal-emboss: orange rim and warm glow in dark, orange
+   rim and soft dark shadow in light). Only focus and lift live here. */
 :root {
   --worlds-focus: var(--focus);
   --worlds-rim: rgba(232, 211, 168, 0.28);
@@ -44,7 +45,8 @@ html[data-theme="light"] {
   margin: 0 0 0.9rem;
   font-size: clamp(1.45rem, 3vw, 2rem);
   letter-spacing: 0.05em;
-  color: var(--heading);
+  color: var(--metal-solid);
+  text-shadow: var(--metal-fallback-shadow);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
@@ -53,6 +55,7 @@ html[data-theme="light"] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: none;
     filter: var(--heading-emboss);
   }
 }
@@ -135,7 +138,8 @@ html[data-theme="light"] {
   font-size: 1.5rem;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  color: var(--heading);
+  color: var(--metal-solid);
+  text-shadow: var(--metal-fallback-shadow-sm);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
@@ -144,6 +148,7 @@ html[data-theme="light"] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: none;
     filter: var(--heading-emboss);
   }
 }

@@ -21,7 +21,6 @@
   --hero-soft: #efebe7;
   --hero-kicker: var(--logo-outline);
   --hero-chip: rgba(14, 12, 10, 0.84);
-  --hero-title-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
   color-scheme: dark;
   --bg: #131211;
   --bg-elev: #1d1c1a;
@@ -37,11 +36,18 @@
   --nav-current: rgba(253, 136, 49, 0.13);
   --nav-current-ink: var(--logo-highlight);
   --kicker: var(--logo-outline);
-  --kicker-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 50%, #f4a94a 100%);
+  --kicker-fill: linear-gradient(180deg, #fff2cc 0%, #ffd25e 50%, #f8bd49 100%);
   --heading: var(--logo-highlight);
-  --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
-  --heading-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.3)) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 1px 0 #5a2406) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(240, 199, 104, 0.22));
-  --name-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.25)) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  --metal-solid: #fdc650;
+  --metal-fill: linear-gradient(180deg, #fff2cc 0%, #ffe780 12%, #ffd25e 30%, #fffbe8 39%, #fff2c4 44%, #fdc650 52%, #f8bd49 66%, #e5aa3c 84%, #f1882e 100%);
+  --metal-emboss: drop-shadow(0 -1px 0 rgba(255, 242, 150, 0.55)) drop-shadow(1px 0 0 #e3751e) drop-shadow(-1px 0 0 #e3751e) drop-shadow(0 1px 0 #e3751e) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 4px 5px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 12px rgba(255, 196, 90, 0.3));
+  --metal-emboss-sm: drop-shadow(0 -1px 0 rgba(255, 242, 150, 0.45)) drop-shadow(0 1px 0 #e3751e) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 3px 4px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 8px rgba(255, 196, 90, 0.22));
+  --metal-emboss-hero: drop-shadow(0 -1px 0 rgba(255, 242, 150, 0.6)) drop-shadow(1px 0 0 #e3751e) drop-shadow(-1px 0 0 #e3751e) drop-shadow(0 1px 0 #e3751e) drop-shadow(0 2px 0 #a8480c) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 16px rgba(255, 196, 90, 0.3));
+  --metal-fallback-shadow: 1px 0 0 #e3751e, -1px 0 0 #e3751e, 0 -1px 0 #e3751e, 0 1px 0 #e3751e, 0 2px 0 #a8480c, 0 4px 8px rgba(0, 0, 0, 0.55);
+  --metal-fallback-shadow-sm: 0 1px 0 #e3751e, 0 2px 0 #a8480c, 0 3px 5px rgba(0, 0, 0, 0.5);
+  --heading-fill: var(--metal-fill);
+  --heading-emboss: var(--metal-emboss);
+  --name-emboss: var(--metal-emboss-sm);
   --kicker-emboss: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.75));
   --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 32%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --accent-bar-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 1px 0 0 rgba(255, 244, 214, 0.4), 0 0 7px rgba(132, 104, 255, 0.4);
@@ -81,9 +87,16 @@
     --kicker: #3a2a7a;
     --kicker-fill: linear-gradient(180deg, #3a2a7a 0%, #3a2a7a 100%);
     --heading: #3a2a7a;
-    --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
-    --heading-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
-    --name-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
+    --metal-solid: #f3b146;
+    --metal-fill: linear-gradient(180deg, #feedbf 0%, #ffd46c 12%, #fabe55 30%, #fffaea 39%, #fee8b5 44%, #f3b146 52%, #f1a739 66%, #e0922e 84%, #e2711d 100%);
+    --metal-emboss: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.75)) drop-shadow(1px 0 0 #c1550e) drop-shadow(-1px 0 0 #c1550e) drop-shadow(0 -1px 0 #c1550e) drop-shadow(0 1px 0 #c1550e) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 1px rgba(36, 22, 54, 0.45)) drop-shadow(0 4px 6px rgba(36, 22, 54, 0.32));
+    --metal-emboss-sm: drop-shadow(1px 0 0 #c1550e) drop-shadow(-1px 0 0 #c1550e) drop-shadow(0 -1px 0 #c1550e) drop-shadow(0 1px 0 #c1550e) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 1px rgba(36, 22, 54, 0.4)) drop-shadow(0 2px 4px rgba(36, 22, 54, 0.28));
+    --metal-emboss-hero: drop-shadow(1px 0 0 #c1550e) drop-shadow(-1px 0 0 #c1550e) drop-shadow(0 -1px 0 #c1550e) drop-shadow(0 1px 0 #c1550e) drop-shadow(0 2px 0 #8f3f0c) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.6));
+    --metal-fallback-shadow: 1px 0 0 #c1550e, -1px 0 0 #c1550e, 0 -1px 0 #c1550e, 0 1px 0 #c1550e, 0 2px 0 #8f3f0c, 0 3px 6px rgba(36, 22, 54, 0.4);
+    --metal-fallback-shadow-sm: 1px 0 0 #c1550e, -1px 0 0 #c1550e, 0 -1px 0 #c1550e, 0 1px 0 #c1550e, 0 2px 0 #8f3f0c, 0 2px 4px rgba(36, 22, 54, 0.35);
+    --heading-fill: var(--metal-fill);
+    --heading-emboss: var(--metal-emboss);
+    --name-emboss: var(--metal-emboss-sm);
     --kicker-emboss: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
     --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 20, 70, 0.22) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
     --accent-bar-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(30, 32, 44, 0.38), inset 1px 0 0 rgba(255, 255, 255, 0.4);
@@ -120,11 +133,18 @@ html[data-theme="dark"] {
   --nav-current: rgba(253, 136, 49, 0.13);
   --nav-current-ink: var(--logo-highlight);
   --kicker: var(--logo-outline);
-  --kicker-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 50%, #f4a94a 100%);
+  --kicker-fill: linear-gradient(180deg, #fff2cc 0%, #ffd25e 50%, #f8bd49 100%);
   --heading: var(--logo-highlight);
-  --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
-  --heading-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.3)) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 1px 0 #5a2406) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(240, 199, 104, 0.22));
-  --name-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.25)) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  --metal-solid: #fdc650;
+  --metal-fill: linear-gradient(180deg, #fff2cc 0%, #ffe780 12%, #ffd25e 30%, #fffbe8 39%, #fff2c4 44%, #fdc650 52%, #f8bd49 66%, #e5aa3c 84%, #f1882e 100%);
+  --metal-emboss: drop-shadow(0 -1px 0 rgba(255, 242, 150, 0.55)) drop-shadow(1px 0 0 #e3751e) drop-shadow(-1px 0 0 #e3751e) drop-shadow(0 1px 0 #e3751e) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 4px 5px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 12px rgba(255, 196, 90, 0.3));
+  --metal-emboss-sm: drop-shadow(0 -1px 0 rgba(255, 242, 150, 0.45)) drop-shadow(0 1px 0 #e3751e) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 3px 4px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 8px rgba(255, 196, 90, 0.22));
+  --metal-emboss-hero: drop-shadow(0 -1px 0 rgba(255, 242, 150, 0.6)) drop-shadow(1px 0 0 #e3751e) drop-shadow(-1px 0 0 #e3751e) drop-shadow(0 1px 0 #e3751e) drop-shadow(0 2px 0 #a8480c) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 16px rgba(255, 196, 90, 0.3));
+  --metal-fallback-shadow: 1px 0 0 #e3751e, -1px 0 0 #e3751e, 0 -1px 0 #e3751e, 0 1px 0 #e3751e, 0 2px 0 #a8480c, 0 4px 8px rgba(0, 0, 0, 0.55);
+  --metal-fallback-shadow-sm: 0 1px 0 #e3751e, 0 2px 0 #a8480c, 0 3px 5px rgba(0, 0, 0, 0.5);
+  --heading-fill: var(--metal-fill);
+  --heading-emboss: var(--metal-emboss);
+  --name-emboss: var(--metal-emboss-sm);
   --kicker-emboss: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.75));
   --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 32%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --accent-bar-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 1px 0 0 rgba(255, 244, 214, 0.4), 0 0 7px rgba(132, 104, 255, 0.4);
@@ -162,9 +182,16 @@ html[data-theme="light"] {
   --kicker: #3a2a7a;
   --kicker-fill: linear-gradient(180deg, #3a2a7a 0%, #3a2a7a 100%);
   --heading: #3a2a7a;
-  --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
-  --heading-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
-  --name-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
+  --metal-solid: #f3b146;
+  --metal-fill: linear-gradient(180deg, #feedbf 0%, #ffd46c 12%, #fabe55 30%, #fffaea 39%, #fee8b5 44%, #f3b146 52%, #f1a739 66%, #e0922e 84%, #e2711d 100%);
+  --metal-emboss: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.75)) drop-shadow(1px 0 0 #c1550e) drop-shadow(-1px 0 0 #c1550e) drop-shadow(0 -1px 0 #c1550e) drop-shadow(0 1px 0 #c1550e) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 1px rgba(36, 22, 54, 0.45)) drop-shadow(0 4px 6px rgba(36, 22, 54, 0.32));
+  --metal-emboss-sm: drop-shadow(1px 0 0 #c1550e) drop-shadow(-1px 0 0 #c1550e) drop-shadow(0 -1px 0 #c1550e) drop-shadow(0 1px 0 #c1550e) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 1px rgba(36, 22, 54, 0.4)) drop-shadow(0 2px 4px rgba(36, 22, 54, 0.28));
+  --metal-emboss-hero: drop-shadow(1px 0 0 #c1550e) drop-shadow(-1px 0 0 #c1550e) drop-shadow(0 -1px 0 #c1550e) drop-shadow(0 1px 0 #c1550e) drop-shadow(0 2px 0 #8f3f0c) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.6));
+  --metal-fallback-shadow: 1px 0 0 #c1550e, -1px 0 0 #c1550e, 0 -1px 0 #c1550e, 0 1px 0 #c1550e, 0 2px 0 #8f3f0c, 0 3px 6px rgba(36, 22, 54, 0.4);
+  --metal-fallback-shadow-sm: 1px 0 0 #c1550e, -1px 0 0 #c1550e, 0 -1px 0 #c1550e, 0 1px 0 #c1550e, 0 2px 0 #8f3f0c, 0 2px 4px rgba(36, 22, 54, 0.35);
+  --heading-fill: var(--metal-fill);
+  --heading-emboss: var(--metal-emboss);
+  --name-emboss: var(--metal-emboss-sm);
   --kicker-emboss: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
   --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 20, 70, 0.22) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --accent-bar-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(30, 32, 44, 0.38), inset 1px 0 0 rgba(255, 255, 255, 0.4);
@@ -344,7 +371,7 @@ html[data-theme="light"] img.logo-art-light {
 }
 
 .brand {
-  color: var(--heading);
+  color: var(--metal-solid);
   text-decoration: none;
   font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
   font-weight: 400;
@@ -487,7 +514,7 @@ h2,
 h3 {
   font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
   font-weight: 400;
-  color: var(--heading);
+  color: var(--metal-solid);
   text-decoration: none;
   letter-spacing: 0.04em;
 }
@@ -709,26 +736,25 @@ h2 {
   padding: 22vh 0 1.8rem;
 }
 
-/* Hero title in the logo orange with a 3D tone, as on Powrush.com: light top
-   highlight, orange body, deeper base, a thin extrusion and a soft drop shadow.
-   The solid orange is the fallback. */
+/* Hero title: the shared logo metal (WORDMARK-METAL-1). Solid gold with the
+   orange rim is the fallback. */
 .hero-copy h1 {
   max-width: min(16ch, 100%);
-  color: #fd8831;
+  color: var(--metal-solid);
   font-size: clamp(2.15rem, 6.4vw, 4.5rem);
   letter-spacing: 0.01em;
-  text-shadow: 0 1px 0 #b85413, 0 2px 0 #8f3f0c, 0 4px 14px rgba(0, 0, 0, 0.6);
+  text-shadow: var(--metal-fallback-shadow);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .hero-copy h1 {
     width: fit-content;
-    background-image: var(--hero-title-fill);
+    background-image: var(--metal-fill);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
-    filter: drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.7)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 0 #6e2f08) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65));
+    filter: var(--metal-emboss-hero);
   }
 }
 
@@ -811,7 +837,7 @@ h2 {
 }
 
 .band h2 {
-  color: var(--heading);
+  color: var(--metal-solid);
   text-decoration: none;
 }
 
@@ -918,7 +944,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.04em;
   font-size: 1.08rem;
-  color: var(--heading);
+  color: var(--metal-solid);
   text-decoration: none;
   margin-bottom: 0.3rem;
 }
@@ -954,7 +980,7 @@ h2 {
   font-weight: 400;
   font-size: 1.15rem;
   letter-spacing: 0.04em;
-  color: var(--heading);
+  color: var(--metal-solid);
   text-decoration: none;
 }
 
@@ -1082,14 +1108,24 @@ h2 {
   clip-path: polygon(0 0, 100% 0, 76% 100%, 0 100%);
 }
 
-/* Embossed headings, brand and names: gradient fill with a highlight above,
-   a thin extrusion below and a soft drop. The solid colour is the fallback. */
+/* WORDMARK-METAL-1: headings, the wordmark and names share one metal recipe,
+   sampled from the per-theme crest (images/logo-dark-1024.webp and
+   logo-light-1024.webp): --metal-fill (gold body, specular band, orange rim
+   at the base) and --metal-emboss (orange rim, bevel highlight, deep
+   extrusion, soft depth; dark adds the crest's warm glow). Without gradient
+   text the fallback is solid gold with the same orange rim as text-shadow. */
 h1,
 h2,
 h3,
 .brand,
 .people strong {
-  color: var(--heading);
+  color: var(--metal-solid);
+  text-shadow: var(--metal-fallback-shadow-sm);
+}
+
+h1,
+h2 {
+  text-shadow: var(--metal-fallback-shadow);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
@@ -1102,6 +1138,7 @@ h3,
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: none;
     filter: var(--heading-emboss);
   }
 
@@ -1140,7 +1177,7 @@ h3,
 
 .brand:hover,
 .brand:focus-visible {
-  color: var(--heading);
+  color: var(--metal-solid);
 }
 
 .card h2 {
@@ -1157,19 +1194,14 @@ h3,
   border-bottom: 1px solid var(--panel-border);
 }
 
-/* ACITY-METAL-1: light-mode 3D outline on hero text (four zero-blur
-   shadows, an offset extrusion and a soft drop). The logo has no outline;
-   see LOGO-THEME-1. */
+/* Light-mode depth shadows for the crest (no outline, no plate). Display text
+   uses the shared --metal-* recipe (WORDMARK-METAL-1). */
 html[data-theme="light"] .logo-link img {
   filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.45)) drop-shadow(0 4px 6px rgba(24, 20, 32, 0.28)) drop-shadow(0 10px 18px rgba(24, 20, 32, 0.18));
 }
 
 html[data-theme="light"] .footer-mark {
   filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.3)) drop-shadow(0 3px 6px rgba(24, 20, 32, 0.2));
-}
-
-html[data-theme="light"] .hero-copy h1 {
-  text-shadow: 1px 0 0 #1e1446, -1px 0 0 #1e1446, 0 1px 0 #1e1446, 0 -1px 0 #1e1446, 0 2px 0 #1e1446, 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (prefers-color-scheme: light) {
@@ -1180,18 +1212,9 @@ html[data-theme="light"] .hero-copy h1 {
   :root:not([data-theme]) .footer-mark {
     filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.3)) drop-shadow(0 3px 6px rgba(24, 20, 32, 0.2));
   }
-
-  :root:not([data-theme]) .hero-copy h1 {
-    text-shadow: 1px 0 0 #1e1446, -1px 0 0 #1e1446, 0 1px 0 #1e1446, 0 -1px 0 #1e1446, 0 2px 0 #1e1446, 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  html[data-theme="light"] .hero-copy h1 {
-    text-shadow: none;
-    filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.6)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
-  }
-
   html[data-theme="light"] .worlds-heading {
     background-image: var(--heading-fill);
     filter: var(--heading-emboss);
@@ -1200,11 +1223,6 @@ html[data-theme="light"] .hero-copy h1 {
 
 @media (prefers-color-scheme: light) {
   @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-    :root:not([data-theme]) .hero-copy h1 {
-      text-shadow: none;
-      filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 228, 186, 0.6)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
-    }
-
     :root:not([data-theme]) .worlds-heading {
       background-image: var(--heading-fill);
       filter: var(--heading-emboss);
@@ -1212,42 +1230,30 @@ html[data-theme="light"] .hero-copy h1 {
   }
 }
 
-/* LOGO-3D-1: the "Autonomicity Games Inc." wordmark, larger and brighter so it
-   sits in proportion with the crest. Polished gold to logo orange with no dark
-   stops in the fill. Dark: thin orange bevel, soft drop and a warm gold glow.
-   Light: 1px deep royal purple #241654 outline (darker than the fill), a
-   purple extrusion and a soft shadow so it reads on the wash. */
+/* LOGO-3D-1 / WORDMARK-METAL-1: the "Autonomicity Games Inc." wordmark, sized
+   in proportion with the crest, in the same --metal-* recipe as the crest and
+   headings (one notch more glow/depth for its size). */
 a.brand,
 a.brand:hover,
 a.brand:focus-visible {
-  color: #ffc24a;
+  color: var(--metal-solid);
   font-size: clamp(1.45rem, 0.85rem + 2.6vw, 2rem);
   letter-spacing: 0.045em;
   line-height: 1.15;
   text-wrap: balance;
+  text-shadow: var(--metal-fallback-shadow);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   a.brand,
   a.brand:hover,
   a.brand:focus-visible {
-    background-image: linear-gradient(180deg, #fffbea 0%, #ffe9a8 22%, #ffd45e 46%, #ffc03c 62%, #ffa62a 82%, #ff9a24 100%);
+    background-image: var(--metal-fill);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 -1px 0 rgba(255, 250, 232, 0.6)) drop-shadow(0 1px 0 #e0761a) drop-shadow(0 1px 0 #b85413) drop-shadow(0 3px 4px rgba(0, 0, 0, 0.55)) drop-shadow(0 0 12px rgba(255, 196, 90, 0.38));
-  }
-
-  html[data-theme="light"] a.brand {
-    filter: drop-shadow(1px 0 0 #241654) drop-shadow(-1px 0 0 #241654) drop-shadow(0 1px 0 #241654) drop-shadow(0 -1px 0 #241654) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 4px 5px rgba(30, 20, 70, 0.3));
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-    :root:not([data-theme]) a.brand {
-      filter: drop-shadow(1px 0 0 #241654) drop-shadow(-1px 0 0 #241654) drop-shadow(0 1px 0 #241654) drop-shadow(0 -1px 0 #241654) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 4px 5px rgba(30, 20, 70, 0.3));
-    }
+    text-shadow: none;
+    filter: var(--metal-emboss);
   }
 }
 
