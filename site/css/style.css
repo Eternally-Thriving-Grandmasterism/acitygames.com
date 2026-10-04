@@ -21,7 +21,7 @@
   --hero-soft: #efebe7;
   --hero-kicker: var(--logo-outline);
   --hero-chip: rgba(14, 12, 10, 0.84);
-  --hero-title-fill: linear-gradient(180deg, #fff0d6 0%, #fed39d 18%, #fdb55c 40%, #fd8831 66%, #e5691a 100%);
+  --hero-title-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
   --logo-slash: linear-gradient(180deg, #fed39d 0%, #fd8831 55%, #d65a12 100%);
   color-scheme: dark;
   --bg: #131211;
@@ -38,16 +38,16 @@
   --nav-current: rgba(253, 136, 49, 0.13);
   --nav-current-ink: var(--logo-highlight);
   --kicker: var(--logo-outline);
-  --kicker-fill: linear-gradient(180deg, #fed39d 0%, #fdb55c 45%, #fd8831 100%);
+  --kicker-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 50%, #f4a94a 100%);
   --heading: var(--logo-highlight);
-  --heading-fill: linear-gradient(180deg, #fff3dc 0%, #fed39d 30%, #fffaf0 46%, #fdb55c 62%, #fd9a45 100%);
-  --heading-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.3)) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 1px 0 #5a2406) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.6));
+  --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
+  --heading-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.3)) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 1px 0 #5a2406) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(240, 199, 104, 0.22));
   --name-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.25)) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   --kicker-emboss: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.75));
-  --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 32%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #fed39d 0%, #fd8831 24%, #ffe9c9 38%, #c8661c 54%, #c9ced6 72%, #f6f8fb 82%, #7f8591 100%);
-  --accent-bar-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 1px 0 0 rgba(255, 244, 214, 0.4);
+  --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 32%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
+  --accent-bar-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 1px 0 0 rgba(255, 244, 214, 0.4), 0 0 7px rgba(132, 104, 255, 0.4);
   --accent-bar-drop: rgba(0, 0, 0, 0.7);
-  --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, #fed39d 0%, #fd8831 26%, #ffe9c9 40%, #c8661c 56%, #c9ced6 74%, #f6f8fb 84%, #7f8591 100%);
+  --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --panel-fill: linear-gradient(180deg, #232120 0%, #1b1a19 52%, #161514 100%);
   --panel-border: rgba(254, 211, 157, 0.12);
   --panel-shadow: inset 0 1px 0 rgba(255, 236, 204, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.55), 0 1px 0 rgba(0, 0, 0, 0.7), 0 3px 8px rgba(0, 0, 0, 0.45), 0 16px 32px -14px rgba(0, 0, 0, 0.8);
@@ -68,28 +68,28 @@
     color-scheme: light;
     --bg: #e9e1f0;
     --bg-elev: rgba(255, 255, 255, 0.5);
-    --line: rgba(74, 58, 134, 0.16);
+    --line: rgba(30, 20, 70, 0.14);
     --text: #262b40;
     --muted: #4a4e66;
     --soft: #4a4e66;
     --caption: #4a4e66;
-    --link: #036997;
-    --link-hover: #024a6b;
-    --focus: #6a4fc4;
+    --link: #2f2766;
+    --link-hover: #1e1446;
+    --focus: #2f2766;
     --nav: #4a4e66;
-    --nav-current: rgba(106, 79, 196, 0.1);
-    --nav-current-ink: #5e48ad;
-    --kicker: #55607a;
-    --kicker-fill: linear-gradient(180deg, #4a5368 0%, #55607a 46%, #4a5368 100%);
-    --heading: #6a4fc4;
-    --heading-fill: linear-gradient(180deg, #c9bdf5 0%, #a996ec 28%, #efeaff 46%, #9c87e6 62%, #8670dc 100%);
+    --nav-current: rgba(47, 39, 102, 0.09);
+    --nav-current-ink: #2f2766;
+    --kicker: #3a2a7a;
+    --kicker-fill: linear-gradient(180deg, #3a2a7a 0%, #3a2a7a 100%);
+    --heading: #3a2a7a;
+    --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
     --heading-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
     --name-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
-    --kicker-emboss: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 rgba(43, 49, 64, 0.4)) drop-shadow(0 1px 1px rgba(30, 32, 44, 0.15));
-    --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 32, 44, 0.24) 100%), linear-gradient(90deg, #b8892b 0%, #e6c77a 20%, #fff7e0 32%, #d4af5a 46%, #b9bec8 66%, #f4f6f9 78%, #8e95a3 100%);
+    --kicker-emboss: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+    --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 20, 70, 0.22) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
     --accent-bar-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(30, 32, 44, 0.38), inset 1px 0 0 rgba(255, 255, 255, 0.4);
     --accent-bar-drop: rgba(30, 32, 44, 0.3);
-    --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 45%, rgba(30, 32, 44, 0.24) 100%), linear-gradient(180deg, #b8892b 0%, #e6c77a 22%, #fff7e0 34%, #d4af5a 48%, #b9bec8 68%, #f4f6f9 80%, #8e95a3 100%);
+    --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 45%, rgba(30, 20, 70, 0.22) 100%), linear-gradient(180deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
     --panel-fill: linear-gradient(170deg, rgba(255, 255, 255, 0.66) 0%, rgba(255, 255, 255, 0.42) 55%, rgba(255, 255, 255, 0.3) 100%);
     --panel-border: rgba(255, 255, 255, 0.7);
     --panel-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 0 rgba(74, 58, 134, 0.1), 0 1px 1px rgba(40, 44, 64, 0.1), 0 4px 10px rgba(40, 44, 64, 0.08), 0 18px 30px -16px rgba(40, 44, 64, 0.35);
@@ -99,7 +99,7 @@
     --page-wash: radial-gradient(70% 22% at 8% 2%, rgba(233, 225, 240, 0.95), rgba(233, 225, 240, 0) 100%), radial-gradient(65% 20% at 96% 10%, rgba(221, 229, 249, 0.95), rgba(221, 229, 249, 0) 100%), radial-gradient(80% 18% at 4% 36%, rgba(246, 227, 232, 0.9), rgba(246, 227, 232, 0) 100%), radial-gradient(75% 20% at 100% 58%, rgba(223, 243, 230, 0.9), rgba(223, 243, 230, 0) 100%), radial-gradient(85% 20% at 20% 80%, rgba(221, 229, 249, 0.85), rgba(221, 229, 249, 0) 100%), radial-gradient(90% 18% at 70% 100%, rgba(252, 242, 212, 0.95), rgba(252, 242, 212, 0) 100%), linear-gradient(180deg, #e9e1f0 0%, #dde5f9 22%, #f6e3e8 44%, #dff3e6 66%, #e9e1f0 84%, #fcf2d4 100%);
     --toggle-border: #6b6f86;
     --toggle-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.45));
-    --toggle-color: #6a4fc4;
+    --toggle-color: #2f2766;
     --frame: transparent;
     --quote-fill: rgba(255, 255, 255, 0.35);
   }
@@ -121,16 +121,16 @@ html[data-theme="dark"] {
   --nav-current: rgba(253, 136, 49, 0.13);
   --nav-current-ink: var(--logo-highlight);
   --kicker: var(--logo-outline);
-  --kicker-fill: linear-gradient(180deg, #fed39d 0%, #fdb55c 45%, #fd8831 100%);
+  --kicker-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 50%, #f4a94a 100%);
   --heading: var(--logo-highlight);
-  --heading-fill: linear-gradient(180deg, #fff3dc 0%, #fed39d 30%, #fffaf0 46%, #fdb55c 62%, #fd9a45 100%);
-  --heading-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.3)) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 1px 0 #5a2406) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.6));
+  --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
+  --heading-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.3)) drop-shadow(0 1px 0 #a8480c) drop-shadow(0 1px 0 #5a2406) drop-shadow(0 5px 8px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(240, 199, 104, 0.22));
   --name-emboss: drop-shadow(0 -1px 0 rgba(255, 243, 220, 0.25)) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   --kicker-emboss: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.75));
-  --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 32%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #fed39d 0%, #fd8831 24%, #ffe9c9 38%, #c8661c 54%, #c9ced6 72%, #f6f8fb 82%, #7f8591 100%);
-  --accent-bar-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 1px 0 0 rgba(255, 244, 214, 0.4);
+  --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 32%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
+  --accent-bar-shadow: inset 0 1px 0 rgba(255, 244, 214, 0.75), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 1px 0 0 rgba(255, 244, 214, 0.4), 0 0 7px rgba(132, 104, 255, 0.4);
   --accent-bar-drop: rgba(0, 0, 0, 0.7);
-  --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, #fed39d 0%, #fd8831 26%, #ffe9c9 40%, #c8661c 56%, #c9ced6 74%, #f6f8fb 84%, #7f8591 100%);
+  --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(180deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --panel-fill: linear-gradient(180deg, #232120 0%, #1b1a19 52%, #161514 100%);
   --panel-border: rgba(254, 211, 157, 0.12);
   --panel-shadow: inset 0 1px 0 rgba(255, 236, 204, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.55), 0 1px 0 rgba(0, 0, 0, 0.7), 0 3px 8px rgba(0, 0, 0, 0.45), 0 16px 32px -14px rgba(0, 0, 0, 0.8);
@@ -149,28 +149,28 @@ html[data-theme="light"] {
   color-scheme: light;
   --bg: #e9e1f0;
   --bg-elev: rgba(255, 255, 255, 0.5);
-  --line: rgba(74, 58, 134, 0.16);
+  --line: rgba(30, 20, 70, 0.14);
   --text: #262b40;
   --muted: #4a4e66;
   --soft: #4a4e66;
   --caption: #4a4e66;
-  --link: #036997;
-  --link-hover: #024a6b;
-  --focus: #6a4fc4;
+  --link: #2f2766;
+  --link-hover: #1e1446;
+  --focus: #2f2766;
   --nav: #4a4e66;
-  --nav-current: rgba(106, 79, 196, 0.1);
-  --nav-current-ink: #5e48ad;
-  --kicker: #55607a;
-  --kicker-fill: linear-gradient(180deg, #4a5368 0%, #55607a 46%, #4a5368 100%);
-  --heading: #6a4fc4;
-  --heading-fill: linear-gradient(180deg, #c9bdf5 0%, #a996ec 28%, #efeaff 46%, #9c87e6 62%, #8670dc 100%);
+  --nav-current: rgba(47, 39, 102, 0.09);
+  --nav-current-ink: #2f2766;
+  --kicker: #3a2a7a;
+  --kicker-fill: linear-gradient(180deg, #3a2a7a 0%, #3a2a7a 100%);
+  --heading: #3a2a7a;
+  --heading-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
   --heading-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.8)) drop-shadow(0 2px 0 #1e1446) drop-shadow(0 3px 4px rgba(30, 32, 44, 0.25));
   --name-emboss: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 2px 2px rgba(30, 32, 44, 0.2));
-  --kicker-emboss: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 1px 0 rgba(43, 49, 64, 0.4)) drop-shadow(0 1px 1px rgba(30, 32, 44, 0.15));
-  --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 32, 44, 0.24) 100%), linear-gradient(90deg, #b8892b 0%, #e6c77a 20%, #fff7e0 32%, #d4af5a 46%, #b9bec8 66%, #f4f6f9 78%, #8e95a3 100%);
+  --kicker-emboss: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
+  --accent-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.14) 32%, rgba(255, 255, 255, 0) 52%, rgba(30, 20, 70, 0.22) 100%), linear-gradient(90deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --accent-bar-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 rgba(30, 32, 44, 0.38), inset 1px 0 0 rgba(255, 255, 255, 0.4);
   --accent-bar-drop: rgba(30, 32, 44, 0.3);
-  --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 45%, rgba(30, 32, 44, 0.24) 100%), linear-gradient(180deg, #b8892b 0%, #e6c77a 22%, #fff7e0 34%, #d4af5a 48%, #b9bec8 68%, #f4f6f9 80%, #8e95a3 100%);
+  --accent-bar-v: linear-gradient(90deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 45%, rgba(30, 20, 70, 0.22) 100%), linear-gradient(180deg, #c99a3a 0%, #f0c768 30%, #fffaf0 48%, #b8862b 72%, #8e1f2f 100%);
   --panel-fill: linear-gradient(170deg, rgba(255, 255, 255, 0.66) 0%, rgba(255, 255, 255, 0.42) 55%, rgba(255, 255, 255, 0.3) 100%);
   --panel-border: rgba(255, 255, 255, 0.7);
   --panel-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 0 rgba(74, 58, 134, 0.1), 0 1px 1px rgba(40, 44, 64, 0.1), 0 4px 10px rgba(40, 44, 64, 0.08), 0 18px 30px -16px rgba(40, 44, 64, 0.35);
@@ -180,7 +180,7 @@ html[data-theme="light"] {
   --page-wash: radial-gradient(70% 22% at 8% 2%, rgba(233, 225, 240, 0.95), rgba(233, 225, 240, 0) 100%), radial-gradient(65% 20% at 96% 10%, rgba(221, 229, 249, 0.95), rgba(221, 229, 249, 0) 100%), radial-gradient(80% 18% at 4% 36%, rgba(246, 227, 232, 0.9), rgba(246, 227, 232, 0) 100%), radial-gradient(75% 20% at 100% 58%, rgba(223, 243, 230, 0.9), rgba(223, 243, 230, 0) 100%), radial-gradient(85% 20% at 20% 80%, rgba(221, 229, 249, 0.85), rgba(221, 229, 249, 0) 100%), radial-gradient(90% 18% at 70% 100%, rgba(252, 242, 212, 0.95), rgba(252, 242, 212, 0) 100%), linear-gradient(180deg, #e9e1f0 0%, #dde5f9 22%, #f6e3e8 44%, #dff3e6 66%, #e9e1f0 84%, #fcf2d4 100%);
   --toggle-border: #6b6f86;
   --toggle-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.45));
-  --toggle-color: #6a4fc4;
+  --toggle-color: #2f2766;
   --frame: transparent;
   --quote-fill: rgba(255, 255, 255, 0.35);
 }
@@ -1178,6 +1178,7 @@ html[data-theme="light"] .hero-copy h1 {
   }
 
   html[data-theme="light"] .worlds-heading {
+    background-image: var(--heading-fill);
     filter: var(--heading-emboss);
   }
 }
@@ -1190,19 +1191,19 @@ html[data-theme="light"] .hero-copy h1 {
     }
 
     :root:not([data-theme]) .worlds-heading {
+      background-image: var(--heading-fill);
       filter: var(--heading-emboss);
     }
   }
 }
 
-/* ACITY-METAL-1: the "Autonomicity Games Inc." wordmark in the crest's own 3D
-   orange (sampled from images/logo-512.png: peach #fed39d, body #fdb55c, rim
+/* ACITY-METAL-1: the "Autonomicity Games Inc." wordmark in the shared polished
+   gold recipe with the crest's warm orange (sampled from images/logo-512.png: peach #fed39d, body #fdb55c, rim
    #fd8831, deep #e5691a, burnt edge #8f3f0c / #6e2f08). Dark: glowing bevel and
    extrusion. Light: adds a 1px deep-purple #1e1446 outline so it reads on the wash. */
 a.brand,
 a.brand:hover,
-a.brand:focus-visible {
-  color: #b85413;
+\1  color: var(--heading);
   font-size: 1.15rem;
 }
 
@@ -1210,11 +1211,11 @@ a.brand:focus-visible {
   a.brand,
   a.brand:hover,
   a.brand:focus-visible {
-    background-image: linear-gradient(180deg, #fff0d6 0%, #fed39d 22%, #fdb55c 46%, #fd8831 70%, #e5691a 100%);
+    background-image: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 -1px 0 rgba(255, 240, 214, 0.55)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 0 #6e2f08) drop-shadow(0 0 6px rgba(253, 136, 49, 0.35)) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0 -1px 0 rgba(255, 240, 214, 0.55)) drop-shadow(0 1px 0 #b85413) drop-shadow(0 1px 0 #8f3f0c) drop-shadow(0 1px 0 #6e2f08) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 8px rgba(240, 199, 104, 0.2));
   }
 
   html[data-theme="light"] a.brand {
