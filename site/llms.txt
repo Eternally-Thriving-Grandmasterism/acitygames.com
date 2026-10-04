@@ -58,7 +58,7 @@ The site shows concept art and trailer art only. The paintings are the world as 
 - Rathor.ai is a separate site on purpose, and the public face of Ra-Thor: https://rathor.ai
 - Building Powrush led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. Living Thunder, the comic and animated series, grew from that work.
 - Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas. A human overrides every output.
-- Independent of xAI. Not certified.
+- Not certified.
 
 ## Careers
 
