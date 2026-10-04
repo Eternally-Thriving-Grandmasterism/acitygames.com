@@ -866,3 +866,112 @@ h2 {
 .old-site-quote footer { font-size: 0.9em; color: var(--muted); }
 .old-site-quote ol { padding-left: 1.25rem; }
 .old-site-quote li { margin: 0.5rem 0; }
+
+/* ACITY-LIGHT-1 (staged on Home via body.stage-light-1).
+   Sitewide rollout: drop the ".stage-light-1" scope from these selectors.
+   Wash colours sampled from images/art/about-quellorian-city-ships-1500.webp;
+   orange from images/logo-512.png. */
+.stage-light-1 {
+  --kicker: #fd8831;
+  --hero-kicker: #fd8831;
+  --h2: #fcb55b;
+}
+
+html[data-theme="light"] .stage-light-1 {
+  --bg: transparent;
+  --frame: transparent;
+  --line: rgba(38, 43, 64, 0.16);
+  --text: #262b40;
+  --muted: #4a4e66;
+  --soft: #4a4e66;
+  --caption: #4a4e66;
+  --link: #9a3400;
+  --link-hover: #6e2800;
+  --focus: #c25a00;
+  --kicker: #ac4a02;
+  --h2: #9a5703;
+  --nav-current: rgba(255, 255, 255, 0.5);
+  --toggle-bg: rgba(255, 255, 255, 0.55);
+  --toggle-border: #6b6f86;
+  --logo-backdrop: transparent;
+  --wash-base: #eee7f4;
+  --wash:
+    radial-gradient(70% 22% at 8% 2%, rgba(238, 231, 244, 0.95), rgba(238, 231, 244, 0) 100%),
+    radial-gradient(65% 20% at 96% 10%, rgba(228, 234, 251, 0.95), rgba(228, 234, 251, 0) 100%),
+    radial-gradient(80% 18% at 4% 36%, rgba(248, 233, 237, 0.9), rgba(248, 233, 237, 0) 100%),
+    radial-gradient(75% 20% at 100% 58%, rgba(231, 246, 236, 0.9), rgba(231, 246, 236, 0) 100%),
+    radial-gradient(85% 20% at 20% 80%, rgba(228, 234, 251, 0.85), rgba(228, 234, 251, 0) 100%),
+    radial-gradient(90% 18% at 70% 100%, rgba(253, 245, 221, 0.95), rgba(253, 245, 221, 0) 100%),
+    linear-gradient(180deg, #eee7f4 0%, #e4eafb 22%, #f8e9ed 44%, #e7f6ec 66%, #eee7f4 84%, #fdf5dd 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .stage-light-1 {
+    --bg: transparent;
+    --frame: transparent;
+    --line: rgba(38, 43, 64, 0.16);
+    --text: #262b40;
+    --muted: #4a4e66;
+    --soft: #4a4e66;
+    --caption: #4a4e66;
+    --focus: #c25a00;
+    --kicker: #ac4a02;
+    --h2: #9a5703;
+    --nav-current: rgba(255, 255, 255, 0.5);
+    --toggle-bg: rgba(255, 255, 255, 0.55);
+    --toggle-border: #6b6f86;
+    --logo-backdrop: transparent;
+    --wash-base: #eee7f4;
+    --wash: linear-gradient(180deg, #eee7f4 0%, #e4eafb 22%, #f8e9ed 44%, #e7f6ec 66%, #eee7f4 84%, #fdf5dd 100%);
+  }
+}
+
+body.stage-light-1 {
+  background-color: var(--wash-base, var(--bg));
+  background-image: var(--wash, none);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+html[data-theme="light"]:has(> body.stage-light-1) {
+  background: #eee7f4;
+}
+
+.stage-light-1 .logo-tab,
+.stage-light-1 .logo-link img,
+.stage-light-1 .footer-mark {
+  background: var(--logo-backdrop, #1a1a1a);
+}
+
+.stage-light-1 .kicker,
+.stage-light-1 .band .kicker {
+  color: var(--kicker);
+}
+
+.stage-light-1 .hero-copy .kicker {
+  color: var(--hero-kicker);
+  width: fit-content;
+  padding: 0.3em 0.6em;
+  margin-left: -0.6em;
+  background: rgba(20, 20, 20, 0.66);
+  border-radius: 0.2rem;
+}
+
+.stage-light-1 h2,
+.stage-light-1 .band h2 {
+  color: var(--h2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 430px) {
+  .stage-light-1 nav ul {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .stage-light-1 nav a {
+    padding: 0.65rem 0.36rem;
+    font-size: 0.9rem;
+  }
+}
