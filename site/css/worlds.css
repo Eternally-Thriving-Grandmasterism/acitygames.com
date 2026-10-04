@@ -1,54 +1,42 @@
 /* SITES-CROSSLINK-1: "Our worlds" cross-site art cards on Home.
    Own file so it can land beside ACITY-METAL-1's style.css rewrite.
-   Metallic palette: brushed gold, champagne, silver. Scoped to .worlds-*.
+   Regal palette from style.css (ACITY-METAL-1). Scoped to .worlds-*.
    Theme keys follow style.css: dark in :root, light under
    prefers-color-scheme without data-theme, then html[data-theme]. */
 
+/* WORLDS-REGAL-1: headings and card titles reuse ACITY-METAL-1's one gold
+   recipe (--heading-fill) and emboss (--heading-emboss: soft glow in dark,
+   1px #1e1446 royal-purple outline in light). Only focus and lift live here. */
 :root {
-  --worlds-heading-fill: linear-gradient(180deg, #fffaf0 0%, #f1e2c0 40%, #d9bf8c 62%, #f3e6c6 80%, #c9ad78 100%);
-  --worlds-heading-emboss: drop-shadow(0 -1px 0 rgba(255, 250, 240, 0.25)) drop-shadow(0 1px 0 #6b5728) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
-  --worlds-heading-solid: #e8d3a8;
-  --worlds-focus: #e8d3a8;
+  --worlds-focus: var(--focus);
   --worlds-rim: rgba(232, 211, 168, 0.28);
   --worlds-lift-shadow: inset 0 1px 0 rgba(255, 244, 222, 0.12), 0 2px 0 rgba(0, 0, 0, 0.7), 0 8px 16px rgba(0, 0, 0, 0.5), 0 24px 40px -16px rgba(0, 0, 0, 0.85);
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
-    --worlds-heading-fill: linear-gradient(180deg, #6a4fc4 0%, #5f45b8 45%, #4c3399 100%);
-    --worlds-heading-emboss: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 2px 3px rgba(46, 16, 101, 0.18));
-    --worlds-heading-solid: #6a4fc4;
-    --worlds-focus: #45309a;
+    --worlds-focus: #1e1446;
     --worlds-rim: rgba(255, 255, 255, 0.75);
-    --worlds-lift-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 2px rgba(46, 16, 101, 0.14), 0 10px 18px rgba(46, 16, 101, 0.16), 0 26px 40px -18px rgba(46, 16, 101, 0.45);
+    --worlds-lift-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 2px rgba(40, 44, 64, 0.14), 0 10px 18px rgba(40, 44, 64, 0.16), 0 26px 40px -18px rgba(40, 44, 64, 0.45);
   }
 }
 
 html[data-theme="dark"] {
-  --worlds-heading-fill: linear-gradient(180deg, #fffaf0 0%, #f1e2c0 40%, #d9bf8c 62%, #f3e6c6 80%, #c9ad78 100%);
-  --worlds-heading-emboss: drop-shadow(0 -1px 0 rgba(255, 250, 240, 0.25)) drop-shadow(0 1px 0 #6b5728) drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
-  --worlds-heading-solid: #e8d3a8;
-  --worlds-focus: #e8d3a8;
+  --worlds-focus: var(--focus);
   --worlds-rim: rgba(232, 211, 168, 0.28);
   --worlds-lift-shadow: inset 0 1px 0 rgba(255, 244, 222, 0.12), 0 2px 0 rgba(0, 0, 0, 0.7), 0 8px 16px rgba(0, 0, 0, 0.5), 0 24px 40px -16px rgba(0, 0, 0, 0.85);
 }
 
 html[data-theme="light"] {
-  --worlds-heading-fill: linear-gradient(180deg, #6a4fc4 0%, #5f45b8 45%, #4c3399 100%);
-  --worlds-heading-emboss: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.85)) drop-shadow(0 2px 3px rgba(46, 16, 101, 0.18));
-  --worlds-heading-solid: #6a4fc4;
-  --worlds-focus: #45309a;
+  --worlds-focus: #1e1446;
   --worlds-rim: rgba(255, 255, 255, 0.75);
-  --worlds-lift-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 2px rgba(46, 16, 101, 0.14), 0 10px 18px rgba(46, 16, 101, 0.16), 0 26px 40px -18px rgba(46, 16, 101, 0.45);
+  --worlds-lift-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 2px rgba(40, 44, 64, 0.14), 0 10px 18px rgba(40, 44, 64, 0.16), 0 26px 40px -18px rgba(40, 44, 64, 0.45);
 }
 
 /* Theme-independent: the card text always sits on a dark scrim over art. */
 .worlds {
-  --worlds-title-fill: linear-gradient(180deg, #fffaf0 0%, #f6ead0 34%, #e2c993 58%, #f4e7c8 78%, #cdb07a 100%);
-  --worlds-title-solid: #f1e2c0;
   --worlds-hook: #e7e9ee;
   --worlds-scrim: 10, 10, 13;
-  --worlds-bar: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.12) 34%, rgba(255, 255, 255, 0) 52%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(90deg, #fff4d6 0%, #d9b36a 28%, #f6e7c1 50%, #b9bec7 76%, #eef1f5 100%);
   margin: 2rem auto 2.6rem;
 }
 
@@ -56,16 +44,16 @@ html[data-theme="light"] {
   margin: 0 0 0.9rem;
   font-size: clamp(1.45rem, 3vw, 2rem);
   letter-spacing: 0.05em;
-  color: var(--worlds-heading-solid);
+  color: var(--heading);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .worlds-heading {
-    background-image: var(--worlds-heading-fill);
+    background-image: var(--heading-fill);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: var(--worlds-heading-emboss);
+    filter: var(--heading-emboss);
   }
 }
 
@@ -108,14 +96,14 @@ html[data-theme="light"] {
 
 .worlds-card::before {
   z-index: 3;
-  background: var(--worlds-bar);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  background: var(--accent-bar);
+  box-shadow: var(--accent-bar-shadow);
 }
 
 .worlds-card::after {
   z-index: 2;
   top: 2px;
-  background: rgba(0, 0, 0, 0.55);
+  background: var(--accent-bar-drop);
 }
 
 .worlds-card img {
@@ -144,19 +132,19 @@ html[data-theme="light"] {
   max-width: 100%;
   font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.25;
+  font-size: 1.5rem;
+  line-height: 1.2;
   letter-spacing: 0.04em;
-  color: var(--worlds-title-solid);
+  color: var(--heading);
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .worlds-card-title {
-    background-image: var(--worlds-title-fill);
+    background-image: var(--heading-fill);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 -1px 0 rgba(255, 250, 240, 0.3)) drop-shadow(0 1px 0 #5c4a22) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.7));
+    filter: var(--heading-emboss);
   }
 }
 
