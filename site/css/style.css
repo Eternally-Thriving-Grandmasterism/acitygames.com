@@ -22,7 +22,6 @@
   --hero-kicker: var(--logo-outline);
   --hero-chip: rgba(14, 12, 10, 0.84);
   --hero-title-fill: linear-gradient(180deg, #fff3d1 0%, #f0c768 28%, #fffaf0 44%, #f4a94a 62%, #c97d22 100%);
-  --logo-slash: linear-gradient(180deg, #fed39d 0%, #fd8831 55%, #d65a12 100%);
   color-scheme: dark;
   --bg: #131211;
   --bg-elev: #1d1c1a;
@@ -275,24 +274,6 @@ a:focus-visible,
   margin: 0.35rem auto 0;
   padding: 0.45rem 18% 0.55rem;
   background: transparent;
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
-}
-
-.logo-tab::before,
-.logo-tab::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--logo-slash);
-  pointer-events: none;
-}
-
-.logo-tab::before {
-  clip-path: polygon(5.4% 25.8%, 14.9% 66.4%, 13.8% 73.4%, 6.1% 31.3%);
-}
-
-.logo-tab::after {
-  clip-path: polygon(94.6% 25.8%, 85.1% 66.4%, 86.2% 73.4%, 93.9% 31.3%);
 }
 
 .logo-link {
@@ -308,8 +289,16 @@ a:focus-visible,
   background: transparent;
 }
 
+/* LOGO-THEME-1: the logo artwork (shape, shading, colours) is never
+   filtered or recoloured. Themes only change the light around it: dark mode
+   gets a soft depth shadow plus a faint warm gold glow; light mode (below)
+   gets a soft neutral drop shadow. No outline, no plate. */
 .logo-link img {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 14px rgba(240, 199, 104, 0.24));
+}
+
+.footer-mark {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 8px rgba(240, 199, 104, 0.2));
 }
 
 .logo-link img {
@@ -1140,16 +1129,15 @@ h3,
   border-bottom: 1px solid var(--panel-border);
 }
 
-/* ACITY-METAL-1: light-mode 3D outline. A 1px deep-indigo ring (four
-   zero-blur drop-shadows, so it follows gradient text and the transparent
-   logo shape), a short offset extrusion and a soft drop. No plate. */
-html[data-theme="light"] .logo-tab,
-html[data-theme="light"] .footer-mark {
-  filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 2px 0 rgba(30, 20, 70, 0.6)) drop-shadow(0 4px 5px rgba(30, 32, 44, 0.28));
+/* ACITY-METAL-1: light-mode 3D outline on hero text (four zero-blur
+   shadows, an offset extrusion and a soft drop). The logo has no outline;
+   see LOGO-THEME-1. */
+html[data-theme="light"] .logo-link img {
+  filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.45)) drop-shadow(0 4px 6px rgba(24, 20, 32, 0.28)) drop-shadow(0 10px 18px rgba(24, 20, 32, 0.18));
 }
 
-html[data-theme="light"] .logo-link img {
-  filter: none;
+html[data-theme="light"] .footer-mark {
+  filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.3)) drop-shadow(0 3px 6px rgba(24, 20, 32, 0.2));
 }
 
 html[data-theme="light"] .hero-copy h1 {
@@ -1157,13 +1145,12 @@ html[data-theme="light"] .hero-copy h1 {
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not([data-theme]) .logo-tab,
-  :root:not([data-theme]) .footer-mark {
-    filter: drop-shadow(1px 0 0 #1e1446) drop-shadow(-1px 0 0 #1e1446) drop-shadow(0 1px 0 #1e1446) drop-shadow(0 -1px 0 #1e1446) drop-shadow(0 2px 0 rgba(30, 20, 70, 0.6)) drop-shadow(0 4px 5px rgba(30, 32, 44, 0.28));
+  :root:not([data-theme]) .logo-link img {
+    filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.45)) drop-shadow(0 4px 6px rgba(24, 20, 32, 0.28)) drop-shadow(0 10px 18px rgba(24, 20, 32, 0.18));
   }
 
-  :root:not([data-theme]) .logo-link img {
-    filter: none;
+  :root:not([data-theme]) .footer-mark {
+    filter: drop-shadow(0 1px 1px rgba(24, 20, 32, 0.3)) drop-shadow(0 3px 6px rgba(24, 20, 32, 0.2));
   }
 
   :root:not([data-theme]) .hero-copy h1 {
