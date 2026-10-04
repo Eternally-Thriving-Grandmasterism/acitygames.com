@@ -1203,7 +1203,8 @@ html[data-theme="light"] .hero-copy h1 {
    extrusion. Light: adds a 1px deep-purple #1e1446 outline so it reads on the wash. */
 a.brand,
 a.brand:hover,
-\1  color: var(--heading);
+a.brand:focus-visible {
+  color: var(--heading);
   font-size: 1.15rem;
 }
 
