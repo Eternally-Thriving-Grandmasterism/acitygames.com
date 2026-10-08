@@ -18,7 +18,6 @@
 - Autonomicity Games Inc. was founded in Canada on March 17, 2016. The name has been a play on AGI since 2016.
 - That work led to the video game Powrush, in development since 2016. Building Powrush led to Ra-Thor, the system behind Rathor.ai. Ra-Thor now helps build Powrush-MMO, and new projects like the Living Thunder comic and animated series.
 - Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
-- While the vision took shape, the company stayed independent.
 
 ## Powrush-MMO
 
@@ -28,10 +27,10 @@
 - The later hope is shared abundance, not extraction. It is a teaching, not a wage.
 - One human, one machine. Offline first. Title Online stays grey.
 - The current build is offline and single-player, and it is in active development. Online play is not live. There is no Steam page and no release date. It is not a public launch candidate.
-- The world is post-apocalyptic. Lore: a world much like Earth, where scarcity, fear, and separation had nearly consumed the web of life. Then the Great Shift: a turn toward mercy, and toward a resource-based economy.
+- The world is post-apocalyptic. Lore: a fractured Earth with magma islands and a scarred moon, where scarcity, fear, and separation had nearly consumed the web of life. Then the Great Shift: a turn toward mercy, and toward a resource-based economy.
 - Diplomacy is the focus. The design is collaboration, or competition. You are free to be peaceful, or to start wars. The scale of that risk includes nuclear war, an extreme meant to be faced safely inside this world.
 - Five peoples share an ever-evolving world: Human, Quellorian, Draek, Cydruid and Ambrosian. Under them, harmony pulls against consumption.
-- Five doors, four places. Human and Ambrosian land in Sanctuary. A Cydruid lands in Heartwood. A Quellorian lands in Threshold. Draek land in Depths.
+- Five doors, four places. Human and Ambrosian land in Sanctuary. A Cydruid lands in Heartwood. A Quellorian lands in Threshold. Draeks land in Depths.
 - In the offline hour a well can be idle, glowing, tended, resting, or stressed.
 - It is an open world. You craft your unique story and quests by flowing through your desires.
 - Powrush has been under development since 2016 by Autonomicity Games Inc.
@@ -40,13 +39,13 @@
 
 ## Peoples
 
-Five peoples: Human, Quellorian, Draek, Cydruid, Ambrosian.
+Five playable peoples: Humans, Quellorians, Draeks, Cydruids, Ambrosians.
 
-- Human: Survivors caught between two cosmic powers. We endure. We choose. We become. Choose flow or reserve. Accent on the build: warm grey-gold.
-- Quellorian: Resonance masters of light and unity. Through harmony, we transcend. Flow restores the well. The Quellorian / Aetherion Luminari Alliance is a coalition of advanced species, centered on light, resonance technology, unity, and progressive evolution. Their mothership is the Auroral Unification Nexus (TAUN), a radial form with blue-white auroral light, a symbol of hope and of ordered power. Accent: iridescent violet / pink and pale gold.
-- Draek: A hivemind empire of consumption and domination. All will be one in the Brood. Take without rest, and the well is stressed. The Draek Dominion is a predatory, hivemind-driven empire that seeks domination through mind control, consumption, and overwhelming force. The Brood Spire is a tall, dark megastructure and the hub of that domination. The Crownstone is a large purple crystal that glows at the center of the Hivelord's helmet. Accent: dry red / bronze.
-- Cydruid: A human in a cyborg frame. The frame is worn. The person remains. Mend. Offer. They mend, and they offer. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. The person is not a tree. Nature is a practice, not a species. Trim is teal and leaf-metal, metal accents on a human frame.
-- Ambrosian: Living embodiments of harmonic attunement. We are the note, the chord, the song. The well sings, or it cracks. Crystalline-organic beings. Core philosophy: Attunement over Domination. Humanoid, elongated and elegant, with visible internal crystal lattices that glow. Accent word: prism cool.
+- Human: Survivors caught between two cosmic powers. Led by Warden Ronan Ashcroft. We endure. We choose. We become. Choose flow or reserve. Accent on the build: warm grey-gold.
+- Quellorian: Luminous ancient aliens whose lost homeworld had two suns, and resonance masters of light and unity. Led by High Luminar Solmaris Orynthe (sol-MAR-is). Through harmony, we transcend. Flow restores the well. The Quellorian / Aetherion Luminari Alliance is a coalition of advanced species, centered on light, resonance technology, unity, and progressive evolution, and set against the Draek Dominion. Their mothership is the Auroral Unification Nexus (TAUN), a radial form with blue-white auroral light, a symbol of hope and of ordered power. Accent: iridescent violet / pink and pale gold.
+- Draek: Biomechanical aliens of a hivemind empire of consumption and domination. All will be one in the Brood. Take without rest, and the well is stressed. The Draek Dominion is a predatory, hivemind-driven empire that seeks domination through mind control, consumption, and overwhelming force. It is ruled by the Hivelord, the villain, whose true name is unknown. The Brood Spire is a tall, dark megastructure and the hub of that domination. The Crownstone is a large purple crystal that glows at the center of the Hivelord's helmet. Freed Draeks follow Vrendak the Unbound (VREN-dak), who was once the Drainer and broke free. Theirs is a hopeful road toward redemption. Accent: dry red / bronze.
+- Cydruid: Druids who chose to become cyborgs, humans and robots merged as one. Led by Archdruid Orin Hollowell. They live in an upside-down stalactite city deep in Earth's hollows, always burrowing, and quietly pull ahead of other humans by harvesting resources thoughtfully and carefully. The frame is chosen. The person remains. Mend. Offer. They mend, and they offer. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. The person is not a tree. Nature is a practice, not a species. Trim is teal and leaf-metal, metal accents on a human frame.
+- Ambrosian: Living embodiments of harmonic attunement. We are the note, the chord, the song. The well sings, or it cracks. Led by Lyrisse, Voice of the Prism Choir. Crystalline-organic beings. Core philosophy: Attunement over Domination. Humanoid, elongated and elegant, with visible internal crystal lattices that glow. Accent word: prism cool.
 
 ## Pictures
 
