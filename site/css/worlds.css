@@ -157,6 +157,7 @@ html[data-theme="light"] {
   color: var(--worlds-hook);
   font-size: 1rem;
   line-height: 1.45;
+  min-height: calc(2em * 1.45);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
@@ -173,12 +174,22 @@ html[data-theme="light"] {
 }
 
 @media (min-width: 760px) {
+  /* TILE-GRID-UNIFORM-1: two equal-width tiles, so both share one height and shape.
+     Each hook reserves two lines, so titles and scrims line up across the row. */
   .worlds-grid {
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .worlds-card {
     min-height: 18rem;
+  }
+}
+
+/* From here a 16:9 tile is taller than the 18rem floor, so the tiles lock to 16:9. */
+@media (min-width: 1100px) {
+  .worlds-card {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 }
 
