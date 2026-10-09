@@ -1,0 +1,193 @@
+/* POWRUSH-HERO-CARD-1: one large card that sends visitors to powrush.com.
+   Used on Home (under the hero) and on the Powrush page (top of main).
+   Reuses the shared metal from style.css (--heading-fill, --heading-emboss,
+   --metal-solid, --metal-fallback-shadow-sm, --radius, --focus). Theme keys
+   follow style.css: dark in :root, light under prefers-color-scheme without
+   data-theme, then html[data-theme]. The text panel is a royal purple fill
+   inside a darker #1e1446 outline in both themes, so its text colours and
+   contrast never change with the theme. Only the outer metal frame and the
+   shadow follow the theme. */
+:root {
+  --pcard-frame: linear-gradient(135deg, #7a5a22 0%, #c99a3a 16%, #f0c768 34%, #fffaf0 50%, #e2bd66 66%, #b8862b 84%, #6e5020 100%);
+  --pcard-shadow: inset 0 1px 0 rgba(255, 244, 222, 0.35), 0 2px 0 rgba(0, 0, 0, 0.7), 0 10px 22px rgba(0, 0, 0, 0.5), 0 28px 48px -20px rgba(0, 0, 0, 0.85);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --pcard-frame: linear-gradient(135deg, #a9a3bd 0%, #d9d5e6 16%, #f6f3fb 34%, #fffdf6 50%, #eadcae 66%, #c9b072 84%, #9a8a62 100%);
+    --pcard-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 2px rgba(30, 20, 70, 0.16), 0 10px 20px rgba(30, 20, 70, 0.16), 0 28px 44px -20px rgba(30, 20, 70, 0.45);
+  }
+}
+
+html[data-theme="dark"] {
+  --pcard-frame: linear-gradient(135deg, #7a5a22 0%, #c99a3a 16%, #f0c768 34%, #fffaf0 50%, #e2bd66 66%, #b8862b 84%, #6e5020 100%);
+  --pcard-shadow: inset 0 1px 0 rgba(255, 244, 222, 0.35), 0 2px 0 rgba(0, 0, 0, 0.7), 0 10px 22px rgba(0, 0, 0, 0.5), 0 28px 48px -20px rgba(0, 0, 0, 0.85);
+}
+
+html[data-theme="light"] {
+  --pcard-frame: linear-gradient(135deg, #a9a3bd 0%, #d9d5e6 16%, #f6f3fb 34%, #fffdf6 50%, #eadcae 66%, #c9b072 84%, #9a8a62 100%);
+  --pcard-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 2px rgba(30, 20, 70, 0.16), 0 10px 20px rgba(30, 20, 70, 0.16), 0 28px 44px -20px rgba(30, 20, 70, 0.45);
+}
+
+.powrush-card {
+  --pcard-outline: #1e1446;
+  --pcard-fill: linear-gradient(160deg, #3b3080 0%, #30276e 48%, #281f60 100%);
+  --pcard-ink: #ece6ff;
+  --pcard-soft: #d6ccf7;
+  --pcard-btn-ink: #1e1446;
+  --pcard-btn-fill: linear-gradient(180deg, #fffdf4 0%, #f8ecc4 30%, #ecd28a 50%, #f5e2a8 72%, #e2c47a 100%);
+  --pcard-btn-fill-hover: linear-gradient(180deg, #ffffff 0%, #fbf2d4 30%, #f1da9c 50%, #f8e8b8 72%, #e9cd88 100%);
+  margin: 1.75rem auto 2.25rem;
+}
+
+.powrush-card-frame {
+  padding: 5px;
+  background: var(--pcard-frame);
+  border: 2px solid var(--pcard-outline);
+  border-radius: var(--radius);
+  box-shadow: var(--pcard-shadow);
+}
+
+.powrush-card-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  overflow: hidden;
+  background: var(--pcard-fill);
+  border: 2px solid var(--pcard-outline);
+  border-radius: calc(var(--radius) - 3px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), inset 0 -1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.powrush-card-media {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  background: var(--pcard-outline);
+}
+
+.powrush-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.powrush-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  min-width: 0;
+  padding: 1.35rem 1.25rem 1.3rem;
+  color: var(--pcard-ink);
+}
+
+.powrush-card-title {
+  max-width: 100%;
+  margin: 0;
+  font-family: "Russo One", "Arial Black", "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
+  color: var(--metal-solid);
+  text-shadow: var(--metal-fallback-shadow-sm);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .powrush-card-title {
+    background-image: var(--heading-fill);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    filter: var(--heading-emboss);
+  }
+}
+
+.powrush-card-copy {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--pcard-ink);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.powrush-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  margin-top: 0.2rem;
+  padding: 0.6rem 1.45rem;
+  color: var(--pcard-btn-ink);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+  background: var(--pcard-btn-fill);
+  border: 2px solid var(--pcard-outline);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -2px 0 rgba(30, 20, 70, 0.22), 0 2px 0 #0f0a26, 0 6px 14px rgba(0, 0, 0, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.powrush-card-btn:hover {
+  color: var(--pcard-btn-ink);
+  background: var(--pcard-btn-fill-hover);
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 #ffffff, inset 0 -2px 0 rgba(30, 20, 70, 0.22), 0 3px 0 #0f0a26, 0 10px 18px rgba(0, 0, 0, 0.45);
+}
+
+.powrush-card-btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 3px rgba(30, 20, 70, 0.3), 0 1px 0 #0f0a26;
+}
+
+.powrush-card-btn:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.powrush-card-note {
+  margin: 0;
+  color: var(--pcard-soft);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+@media (min-width: 760px) {
+  .powrush-card-inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  }
+
+  .powrush-card-media {
+    aspect-ratio: auto;
+    min-height: 19rem;
+  }
+
+  .powrush-card-media img {
+    position: absolute;
+    inset: 0;
+  }
+
+  .powrush-card-body {
+    justify-content: center;
+    padding: 2rem 2rem 1.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .powrush-card-btn {
+    transition: none;
+  }
+
+  .powrush-card-btn:hover,
+  .powrush-card-btn:active {
+    transform: none;
+  }
+}
