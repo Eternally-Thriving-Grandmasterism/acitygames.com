@@ -119,6 +119,12 @@ html[data-theme="light"] {
   object-position: center 40%;
 }
 
+/* TILE-GRID-UNIFORM-2: the observation tower's roof tip touched the top edge at
+   40%, so this tile sits a little higher. */
+.worlds-card[href*="powrush.com"] img {
+  object-position: center 30%;
+}
+
 .worlds-card-text {
   position: relative;
   z-index: 1;
