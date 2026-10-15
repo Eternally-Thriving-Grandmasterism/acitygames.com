@@ -17,7 +17,7 @@
 - Sherif Botros is the founder and current steward of Autonomicity Games Inc. Since 2003 he has followed that star on his own.
 - Autonomicity Games Inc. was founded in Canada on March 17, 2016. The name has been a play on AGI since 2016.
 - acitygames.com is the company site. powrush.com is the game site. rathor.ai is the AGI system site.
-- That work led to the video game Powrush, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark belongs to Autonomicity Games Inc.
+- That work led to the Powrush universe, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark belongs to Autonomicity Games Inc.
 - Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
 
 ## Powrush-MMO
@@ -29,15 +29,16 @@
 - The later hope is shared abundance, not extraction. It is a teaching, not a wage.
 - One human, one machine. Offline first. Title Online stays grey.
 - Offline Windows and Linux builds exist. They are single-player and in active development. An itch.io early access is in preparation and is not live. Online play is planned, with no date and no promise of one. There is no Steam page. It is not a public launch candidate.
-- The world is post-apocalyptic. Lore: a fractured Earth with magma islands and a scarred moon, where scarcity, fear, and separation had nearly consumed the web of life. Then the Great Shift: a turn toward mercy, and toward a resource-based economy.
-- Diplomacy is the focus. The design is collaboration, or competition. You are free to be peaceful, or to start wars. The scale of that risk includes nuclear war, an extreme meant to be faced safely inside this world.
+- The Powrush universe is post-apocalyptic. Lore: a fractured Earth with magma islands and a scarred moon, where scarcity, fear, and separation had nearly consumed the web of life. Then the Great Shift: a turn toward mercy, and toward a resource-based economy.
+- Diplomacy is the focus. The design is collaboration, or competition. You are free to be peaceful, or to start wars. The scale of that risk includes nuclear war, an extreme meant to be faced safely inside the Powrush universe.
 - Among its peoples are Human, Quellorian, Draek, Cydruid and Ambrosian. Under them, harmony pulls against consumption.
-- Five doors, four places. Human and Ambrosian land in Sanctuary. A Cydruid lands in Heartwood. A Quellorian lands in Threshold. Draeks land in Depths.
+- Human and Ambrosian land in Sanctuary. A Cydruid lands in Heartwood. A Quellorian lands in Threshold. Draeks land in Depths.
+- The Powrush universe holds more lands than those landings. Climates answer to Sanctuary Prime, Verdant Heartwood, Crystal Spires, the Voidfarer Horizon, and Abyssal Depths. Other realm names in the build are the Synthetic Lattice, Verdant Bloom, and the Harmonic Chorus. Heartwood opens in rings, from the lamp out through the lip, the wards, the teeth, Threshold, and the spiral. Biomes include crystal fields, deep caves, ancient forest, sunken springs, knowledge archives, and rare mineral veins. The Cydruid home is an upside-down stalactite city in Earth's hollows. Lore also names the Whispering Glade and the Elder Tree Council Ring.
 - In the offline hour a well can be idle, glowing, tended, resting, or stressed.
 - It is an open world. You craft your unique story and quests by flowing through your desires.
 - Powrush has been under development since 2016 by Autonomicity Games Inc.
 - When the subject is the build, the look is gritty low-poly volume and high-detail light: desaturated earth, and one accent for the place.
-- Repository: https://github.com/Eternally-Thriving-Grandmasterism/Powrush-MMO
+- Source on GitHub: https://github.com/Eternally-Thriving-Grandmasterism/Powrush-MMO
 
 ## Peoples
 
@@ -51,19 +52,19 @@ Five peoples named here: Humans, Quellorians, Draeks, Cydruids, Ambrosians.
 
 ## Pictures
 
-The site shows concept art and trailer art only. The paintings are the world as imagined. They are not gameplay and are not screenshots of the current build.
+The site shows concept art and trailer art only. The paintings are the Powrush universe as imagined. They are not gameplay and are not screenshots of the current build.
 
 ## Rathor.ai
 
 - Ra-Thor may read the hour you played. It does not play that hour for you.
 - rathor.ai is the AGI system site, separate on purpose, and the public face of Ra-Thor: https://rathor.ai
-- Building Powrush led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark belongs to Autonomicity Games Inc.
+- Building the Powrush universe led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark belongs to Autonomicity Games Inc.
 - Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas. A human overrides every output.
 - Not certified.
 
 ## Careers
 
-If you want to build a world you can walk, write. Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted. Autonomicity Games Inc. plans to hire, including executives. Today it is still one person. If this is your work, write to info@Rathor.ai. Say who you are, and what you would build.
+If you want to build a universe you can walk, write. Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted. Autonomicity Games Inc. plans to hire, including executives. Today it is still one person. If this is your work, write to info@Rathor.ai. Say who you are, and what you would build.
 
 ## Contact
 
