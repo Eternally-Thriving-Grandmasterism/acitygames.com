@@ -1,6 +1,6 @@
 # Autonomicity Games Inc.
 
-> Practice the choice while it is still a choice. This studio is for global diplomacy and a realistic abundance. Autonomicity Games Inc. was founded in Canada on March 17, 2016, and is stewarded by its founder, Sherif Botros. The name has been a play on AGI since 2016. Since 2003 he has followed TOLC (True Original Lord Creator), his north star. Powrush-MMO is in development. Online play is not live. The public site is https://acitygames.com.
+> Practice the choice while it is still a choice. This studio is for global diplomacy and a realistic abundance. Autonomicity Games Inc. was founded in Canada on March 17, 2016, and is stewarded by its founder, Sherif Botros. The name has been a play on AGI since 2016. Since 2003 he has followed TOLC (True Original Lord Creator), his north star. acitygames.com is the company site. powrush.com is the game site. rathor.ai is the AGI system site. Powrush-MMO is a universe of many worlds and peoples, in development. Online play is planned, with no date. The company site is https://acitygames.com.
 
 ## Pages
 
@@ -16,20 +16,22 @@
 - The studio exists to practice global diplomacy and a realistic abundance. The north star is TOLC (True Original Lord Creator).
 - Sherif Botros is the founder and current steward of Autonomicity Games Inc. Since 2003 he has followed that star on his own.
 - Autonomicity Games Inc. was founded in Canada on March 17, 2016. The name has been a play on AGI since 2016.
-- That work led to the video game Powrush, in development since 2016. Building Powrush led to Ra-Thor, the system behind Rathor.ai. Ra-Thor now helps build Powrush-MMO, and new projects like the Living Thunder comic and animated series.
+- acitygames.com is the company site. powrush.com is the game site. rathor.ai is the AGI system site.
+- That work led to the video game Powrush, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark belongs to Autonomicity Games Inc.
 - Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
 
 ## Powrush-MMO
 
+- Powrush-MMO is a universe of many worlds and peoples. PC and Linux get the full game. The engine is on Bevy 0.20.
 - The yard is the universe at the scale of a well. The wider story wears five peoples and a stone.
 - If you only take, the glow fades. If you allocate, the climate comes back.
 - Walk a climate. Harvest with mercy. Learn a resource-based economy by playing. The lesson is in the hands.
 - The later hope is shared abundance, not extraction. It is a teaching, not a wage.
 - One human, one machine. Offline first. Title Online stays grey.
-- The current build is offline and single-player, and it is in active development. Online play is not live. There is no Steam page and no release date. It is not a public launch candidate.
+- Offline Windows and Linux builds exist. They are single-player and in active development. An itch.io early access is in preparation and is not live. Online play is planned, with no date and no promise of one. There is no Steam page. It is not a public launch candidate.
 - The world is post-apocalyptic. Lore: a fractured Earth with magma islands and a scarred moon, where scarcity, fear, and separation had nearly consumed the web of life. Then the Great Shift: a turn toward mercy, and toward a resource-based economy.
 - Diplomacy is the focus. The design is collaboration, or competition. You are free to be peaceful, or to start wars. The scale of that risk includes nuclear war, an extreme meant to be faced safely inside this world.
-- Five peoples share an ever-evolving world: Human, Quellorian, Draek, Cydruid and Ambrosian. Under them, harmony pulls against consumption.
+- Among its peoples are Human, Quellorian, Draek, Cydruid and Ambrosian. Under them, harmony pulls against consumption.
 - Five doors, four places. Human and Ambrosian land in Sanctuary. A Cydruid lands in Heartwood. A Quellorian lands in Threshold. Draeks land in Depths.
 - In the offline hour a well can be idle, glowing, tended, resting, or stressed.
 - It is an open world. You craft your unique story and quests by flowing through your desires.
@@ -39,12 +41,12 @@
 
 ## Peoples
 
-Five playable peoples: Humans, Quellorians, Draeks, Cydruids, Ambrosians.
+Five peoples named here: Humans, Quellorians, Draeks, Cydruids, Ambrosians.
 
 - Human: Survivors caught between two cosmic powers. Led by Warden Ronan Ashcroft. We endure. We choose. We become. Choose flow or reserve. Accent on the build: warm grey-gold.
 - Quellorian: Luminous ancient aliens whose lost homeworld had two suns, and resonance masters of light and unity. Led by High Luminar Solmaris Orynthe (sol-MAR-is). Through harmony, we transcend. Flow restores the well. The Quellorian / Aetherion Luminari Alliance is a coalition of advanced species, centered on light, resonance technology, unity, and progressive evolution, and set against the Draek Dominion. Their mothership is the Auroral Unification Nexus (TAUN), a radial form with blue-white auroral light, a symbol of hope and of ordered power. Accent: iridescent violet / pink and pale gold.
-- Draek: Biomechanical aliens of a hivemind empire of consumption and domination. All will be one in the Brood. Take without rest, and the well is stressed. The Draek Dominion is a predatory, hivemind-driven empire that seeks domination through mind control, consumption, and overwhelming force. It is ruled by the Hivelord, the villain, whose true name is unknown. The Brood Spire is a tall, dark megastructure and the hub of that domination. The Crownstone is a large purple crystal that glows at the center of the Hivelord's helmet. Freed Draeks follow Vrendak the Unbound (VREN-dak), who was once the Drainer and broke free. Theirs is a hopeful road toward redemption. Accent: dry red / bronze.
-- Cydruid: Druids who chose to become cyborgs, humans and robots merged as one. Led by Archdruid Orin Hollowell. They live in an upside-down stalactite city deep in Earth's hollows, always burrowing, and quietly pull ahead of other humans by harvesting resources thoughtfully and carefully. The frame is chosen. The person remains. Mend. Offer. They mend, and they offer. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. The person is not a tree. Nature is a practice, not a species. Trim is teal and leaf-metal, metal accents on a human frame.
+- Draek: Hard-plated chitin humanoids of a hivemind empire of consumption and domination. All will be one in the Brood. Take without rest, and the well is stressed. The Draek Dominion is a predatory, hivemind-driven empire that seeks domination through mind control, consumption, and overwhelming force. It is ruled by the Hivelord, the villain, whose true name is unknown. The Brood Spire is a tall, dark megastructure and the hub of that domination. The Crownstone is a large purple crystal that glows at the center of the Hivelord's helmet. Freed Draeks follow Vrendak the Unbound (VREN-dak), who was once the Drainer and broke free. Theirs is a hopeful road toward redemption. Accent: dry red / bronze.
+- Cydruid: Druids who chose to become cyborgs, humans and robots merged as one. Led by Archdruid Orin Hollowell. They live in an upside-down stalactite city deep in Earth's hollows, always burrowing, and quietly pull ahead of other humans by harvesting resources thoughtfully and carefully. The frame is chosen. The person remains. They mend, and they offer. They weave living networks that heal, protect, and restore. "We do not conquer the wild. We become its most faithful expression." Limbs, then torso, are swapped for machine parts, part by part, all the way to fully cyborg, an upgrade path open to every human. Machine parts mean fewer infections and bionic powers. The person is not a tree. Nature is a practice, not a species. Trim is teal and leaf-metal, metal accents on a human frame.
 - Ambrosian: Living embodiments of harmonic attunement. We are the note, the chord, the song. The well sings, or it cracks. Led by Lyrisse, Voice of the Prism Choir. Crystalline-organic beings. Core philosophy: Attunement over Domination. Humanoid, elongated and elegant, with visible internal crystal lattices that glow. Accent word: prism cool.
 
 ## Pictures
@@ -54,14 +56,14 @@ The site shows concept art and trailer art only. The paintings are the world as 
 ## Rathor.ai
 
 - Ra-Thor may read the hour you played. It does not play that hour for you.
-- Rathor.ai is a separate site on purpose, and the public face of Ra-Thor: https://rathor.ai
-- Building Powrush led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. Living Thunder, the comic and animated series, grew from that work.
+- rathor.ai is the AGI system site, separate on purpose, and the public face of Ra-Thor: https://rathor.ai
+- Building Powrush led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark belongs to Autonomicity Games Inc.
 - Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas. A human overrides every output.
 - Not certified.
 
 ## Careers
 
-If you want to build a world you can walk, write. Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted. Autonomicity Games Inc. plans to hire, executives included. Today it is still one person. If this is your work, write to info@Rathor.ai. Say who you are, and what you would build.
+If you want to build a world you can walk, write. Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted. Autonomicity Games Inc. plans to hire, including executives. Today it is still one person. If this is your work, write to info@Rathor.ai. Say who you are, and what you would build.
 
 ## Contact
 
