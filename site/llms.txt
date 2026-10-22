@@ -17,7 +17,7 @@
 - Sherif Botros is the founder and current steward of Autonomicity Games Inc. Since 2003 he has followed that star on his own.
 - Autonomicity Games Inc. was founded in Canada on March 17, 2016. The name has been a play on AGI since 2016.
 - acitygames.com is the company site. powrush.com is the game site. rathor.ai is the AGI system site.
-- That work led to the Powrush universe, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark (pending) is held by Autonomicity Games Inc.
+- That work led to the Powrush universe, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark is pending.
 - Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
 
 ## Powrush-MMO
@@ -58,7 +58,7 @@ The site shows concept art and trailer art only. The paintings are the Powrush u
 
 - Ra-Thor may read the hour you played. It does not play that hour for you.
 - rathor.ai is the AGI system site, separate on purpose, and the public face of Ra-Thor: https://rathor.ai
-- Building the Powrush universe led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark (pending) is held by Autonomicity Games Inc.
+- Building the Powrush universe led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark is pending.
 - Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas. A human overrides every output.
 - Not certified.
 
