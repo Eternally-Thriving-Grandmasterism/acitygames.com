@@ -1260,3 +1260,44 @@ a.brand:focus-visible {
 .people {
   margin-bottom: 1.25rem;
 }
+
+/* CARDS-CLICKABLE-1: the whole card is the click target, not just its link.
+   Owner rule (Sherif, 2026-11-02, permanent): make all cards fully clickable,
+   instead of tiny buttons partially clickable, because humans like easy navigating.
+   Use: .card-link on the card, .stretched-link on its one primary link.
+   Any other link inside gets .card-link-secondary so it stays clickable.
+   Never nest interactive elements. Cards with no link stay as they are. */
+.card-link { position: relative; cursor: pointer; }
+.card-link .stretched-link { position: static; }
+.card-link .stretched-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.card-link .card-link-secondary { position: relative; z-index: 3; }
+/* The cover is part of the link. A filter, transform, perspective, backdrop-filter,
+   will-change or contain on the link, or on any wrapper between it and the card,
+   makes that element the cover's containing block, so the cover shrinks to the
+   button and flickers on hover. Switch them all off, at rest and on hover.
+   The hover feedback lives on the card itself (the card is the containing block anyway). */
+html .card-link a.stretched-link,
+html .card-link a.stretched-link:is(:hover, :active, :focus-visible),
+html .card-link :has(a.stretched-link),
+html .card-link :has(a.stretched-link):hover {
+  filter: none;
+  transform: none;
+  perspective: none;
+  backdrop-filter: none;
+  will-change: auto;
+  contain: none;
+}
+/* Wrappers between the card and its link must not be positioned either, or the
+   cover stops at the wrapper instead of the card edge. */
+html .card-link :has(a.stretched-link) { position: static; }
+/* Hover feedback on the card itself: a thin ring that keeps the card's own shadow. */
+.card-link:hover { outline: 1px solid var(--focus); outline-offset: 3px; }
+.card-link:has(.stretched-link:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
