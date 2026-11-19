@@ -1,0 +1,313 @@
+/* Home only. Steps: 0.5 1 1.5 2.5 4rem. */
+
+body.home {
+  --mark: clamp(64px, 9vw, 120px);
+  --door-frame: linear-gradient(135deg, #9a7438 0%, #e7c56e 38%, #fffaf0 50%, #c9a25c 72%, #8d6a34 100%);
+}
+
+html[data-theme="light"] body.home {
+  --door-frame: linear-gradient(135deg, #b7b1c8 0%, #f4f0fa 36%, #fffdf8 50%, #e4d2a0 74%, #b7a06a 100%);
+}
+
+body.home .logo-tab {
+  margin: 0.5rem auto 0;
+  padding: 0 0 0.5rem;
+}
+
+body.home .bar {
+  padding: 0.5rem 0 1rem;
+}
+
+body.home .logo-link {
+  display: grid;
+}
+
+body.home .logo-link picture {
+  grid-area: 1 / 1;
+  line-height: 0;
+}
+
+body.home .site-footer picture {
+  display: block;
+  width: 64px;
+  line-height: 0;
+}
+
+html[data-theme="dark"] body.home picture:has(img.logo-art-light),
+html[data-theme="light"] body.home picture:has(img.logo-art-dark) {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) body.home picture:has(img.logo-art-dark) {
+    display: none;
+  }
+
+  :root:not([data-theme]) body.home picture:has(img.logo-art-light) {
+    display: block;
+  }
+}
+
+body.home nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+body.home .theme-toggle:not([hidden]) {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+body.home .footer-channels a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+body.home .hero-media {
+  min-height: 64vh;
+}
+
+body.home .hero-scrim {
+  background:
+    linear-gradient(90deg, rgba(7, 6, 5, 0.94) 0, rgba(7, 6, 5, 0.92) 32rem, rgba(7, 6, 5, 0.84) 46rem, rgba(7, 6, 5, 0.34) 62rem, rgba(7, 6, 5, 0) 100%),
+    linear-gradient(180deg, rgba(7, 6, 5, 0.35) 0%, rgba(7, 6, 5, 0.2) 42%, rgba(7, 6, 5, 0.72) 100%);
+}
+
+body.home .hero-copy {
+  padding: 2.5rem 0 1.5rem;
+}
+
+body.home .hero-copy .kicker,
+body.home .hero-copy h1,
+body.home .hero-copy .lede {
+  max-width: 38rem;
+}
+
+body.home .hero-copy .kicker {
+  background: #14110e;
+}
+
+body.home .hero-copy .lede {
+  color: #f4efe8;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+}
+
+body.home .hero figcaption {
+  padding: 0.5rem 0 1rem;
+}
+
+body.home .doors {
+  margin: 2.5rem auto;
+}
+
+body.home .door-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+body.home .door-row > .worlds-heading {
+  order: -1;
+  grid-column: 1 / -1;
+  margin: 0 0 0.5rem;
+}
+
+body.home .door-row > * {
+  min-width: 0;
+}
+
+body.home .door-row .powrush-card {
+  margin: 0;
+  height: 100%;
+}
+
+body.home .door-row .powrush-card-frame,
+body.home .door-row .powrush-card-inner {
+  height: 100%;
+}
+
+body.home .door-row .powrush-card-inner {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+body.home .door-row .powrush-card-media {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  flex: none;
+  overflow: hidden;
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+
+body.home .door-row .powrush-card-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body.home .door-row .powrush-card-media img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  inset: auto;
+}
+
+body.home .door-row .powrush-card-body {
+  flex: 1 1 auto;
+  gap: 1rem;
+  padding: 1rem 1rem 1.5rem;
+}
+
+body.home .door-row .powrush-card-btn {
+  max-width: 100%;
+  min-height: 44px;
+  white-space: normal;
+  text-align: center;
+}
+
+body.home .door-row > .worlds-card {
+  height: 100%;
+  min-height: 16rem;
+  padding: 3px;
+  border: 1px solid rgba(30, 20, 70, 0.72);
+  background: var(--door-frame);
+  box-shadow: 0 1px 0 rgba(255, 244, 222, 0.28) inset, 0 8px 18px rgba(0, 0, 0, 0.28);
+}
+
+body.home .door-row > .worlds-card::before,
+body.home .door-row > .worlds-card::after {
+  content: none;
+}
+
+body.home .door-row > .worlds-card img {
+  top: 3px;
+  right: auto;
+  bottom: auto;
+  left: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: calc(var(--radius) - 3px);
+}
+
+body.home .door-row .worlds-card-text {
+  margin: 0;
+  border-radius: 0 0 calc(var(--radius) - 3px) calc(var(--radius) - 3px);
+}
+
+body.home .band h2,
+body.home .section h2,
+body.home .worlds-heading,
+body.home .door-row .powrush-card-title,
+body.home .door-row .worlds-card-title {
+  font-size: clamp(1.45rem, 1.15rem + 1.35vw, 2rem);
+}
+
+body.home .band p,
+body.home .section > p,
+body.home .panel,
+body.home .old-site-quote {
+  max-width: 68ch;
+}
+
+body.home .band {
+  padding: 2.5rem 0;
+  margin: 0 0 2.5rem;
+}
+
+body.home .section {
+  margin: 0 0 2.5rem;
+}
+
+body.home .section h2,
+body.home .band h2 {
+  margin-bottom: 1rem;
+}
+
+body.home .band p,
+body.home .section > p {
+  margin: 0 0 1rem;
+}
+
+body.home .panel,
+body.home .old-site-quote {
+  margin: 1.5rem 0;
+}
+
+body.home .gallery {
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+body.home main {
+  padding-bottom: 4rem;
+}
+
+body.home .grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+body.home .grid > * {
+  min-width: 0;
+}
+
+@media (min-width: 640px) {
+  body.home .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 760px) {
+  body.home .hero-media {
+    min-height: min(78vh, 760px);
+  }
+
+  body.home .door-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  body.home .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  body.home .door-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body.home .door-row > .worlds-card {
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+}
+
+@media (max-width: 759px) {
+  body.home .hero-scrim {
+    background:
+      linear-gradient(180deg, rgba(7, 6, 5, 0.55) 0%, rgba(7, 6, 5, 0.86) 36%, rgba(7, 6, 5, 0.94) 100%);
+  }
+
+  body.home .hero-copy {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.home *,
+  body.home *::before,
+  body.home *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
