@@ -32,14 +32,21 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/worlds.css">
   <link rel="stylesheet" href="css/powrush-card.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
+<body class="home">
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <div class="logo-tab">
       <a class="logo-link" href="index.html">
-        <img class="logo-art logo-art-dark" src="images/logo-dark-512.webp" srcset="images/logo-dark-512.webp 1x, images/logo-dark-1024.webp 2x" alt="Autonomicity Games logo" width="512" height="585" loading="eager" fetchpriority="high" decoding="async">
-        <img class="logo-art logo-art-light" src="images/logo-light-512.webp" srcset="images/logo-light-512.webp 1x, images/logo-light-1024.webp 2x" alt="Autonomicity Games logo" width="512" height="585" loading="lazy" decoding="async">
+        <picture>
+          <source type="image/avif" srcset="images/logo-dark-200.avif 200w, images/logo-dark-400.avif 400w" sizes="(min-width: 1334px) 120px, (min-width: 760px) 9vw, (min-width: 686px) 14vw, 96px">
+          <img class="logo-art logo-art-dark" src="images/logo-dark-200.webp" srcset="images/logo-dark-200.webp 200w, images/logo-dark-400.webp 400w" sizes="(min-width: 1334px) 120px, (min-width: 760px) 9vw, (min-width: 686px) 14vw, 96px" alt="Autonomicity Games logo" width="200" height="228" loading="eager" fetchpriority="high" decoding="async">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="images/logo-light-200.avif 200w, images/logo-light-400.avif 400w" sizes="(min-width: 1334px) 120px, (min-width: 760px) 9vw, (min-width: 686px) 14vw, 96px">
+          <img class="logo-art logo-art-light" src="images/logo-light-200.webp" srcset="images/logo-light-200.webp 200w, images/logo-light-400.webp 400w" sizes="(min-width: 1334px) 120px, (min-width: 760px) 9vw, (min-width: 686px) 14vw, 96px" alt="Autonomicity Games logo" width="200" height="228" loading="lazy" fetchpriority="low" decoding="async">
+        </picture>
       </a>
     </div>
     <div class="wrap bar">
@@ -70,6 +77,7 @@
     <figure class="hero">
       <div class="hero-media">
         <picture>
+          <source type="image/avif" srcset="images/art/trailer-earth-battle-768.avif 768w, images/art/trailer-earth-battle-1168.avif 1168w" sizes="100vw">
           <img src="images/art/trailer-earth-battle-1168.webp" srcset="images/art/trailer-earth-battle-768.webp 768w, images/art/trailer-earth-battle-1168.webp 1168w" sizes="100vw" width="1168" height="784" alt="A dark spired structure hangs in orbit above the night side of Earth while a formation of pale ships crosses the sky." decoding="async" fetchpriority="high" loading="eager">
         </picture>
         <div class="hero-scrim" aria-hidden="true"></div>
@@ -85,38 +93,44 @@
         <div class="wrap">Trailer art. A dark spired structure in orbit above Earth.</div>
       </figcaption>
     </figure>
-    <section class="powrush-card wrap card-link" aria-labelledby="powrush-card-home-heading">
-      <div class="powrush-card-frame">
-        <div class="powrush-card-inner">
-          <figure class="powrush-card-media">
-            <img src="images/art/powrush-card-quellorian-arena-800.webp" srcset="images/art/powrush-card-quellorian-arena-800.webp 800w, images/art/powrush-card-quellorian-arena-1600.webp 1600w" sizes="(min-width: 1180px) 37rem, (min-width: 760px) 54vw, 100vw" width="1600" height="900" alt="Painted art: a white-and-gold Quellorian arena ringed with violet crystals and full stands, set on a cliff above the clouds." loading="lazy" decoding="async">
-          </figure>
-          <div class="powrush-card-body">
-            <h2 id="powrush-card-home-heading" class="powrush-card-title">Game website · powrush.com</h2>
-            <p class="powrush-card-copy">Quellorians of light and the Draek hivemind share a universe of many worlds. Offline Windows and Linux builds exist. Online play is planned, with no date.</p>
-            <a class="stretched-link powrush-card-btn" href="https://powrush.com/">Visit Powrush.com</a>
-            <p class="powrush-card-note">Painted art. Not a screenshot of the current offline build.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="worlds wrap" aria-labelledby="worlds-heading">
+    <section class="worlds wrap doors" aria-labelledby="worlds-heading">
       <h2 id="worlds-heading" class="worlds-heading">Our products</h2>
-      <div class="worlds-grid">
-        <a class="worlds-card" href="https://rathor.ai/">
-          <img src="images/art/worlds-rathor-underwater-habitat-768.webp" srcset="images/art/worlds-rathor-underwater-habitat-768.webp 768w, images/art/worlds-rathor-underwater-habitat-1500.webp 1500w" sizes="(min-width: 760px) 35rem, 100vw" width="768" height="432" alt="A glowing underwater habitat of teal domes and violet rings, lit from within, with small craft in the dark water around it." loading="lazy" decoding="async">
-          <span class="worlds-card-text">
-            <span class="worlds-card-title">AGI system website · rathor.ai</span>
-            <span class="worlds-card-hook">The public site for Ra-Thor, the AGI system that helps build Powrush-MMO.</span>
-          </span>
-        </a>
-        <a class="worlds-card" href="https://powrush.com/">
-          <img src="images/art/worlds-powrush-observation-tower-768.webp" srcset="images/art/worlds-powrush-observation-tower-768.webp 768w, images/art/worlds-powrush-observation-tower-1500.webp 1500w" sizes="(min-width: 760px) 35rem, 100vw" width="768" height="432" alt="A white and gold observation tower on a cliff above the clouds, with a balcony and a violet-lit chamber." loading="lazy" decoding="async">
-          <span class="worlds-card-text">
-            <span class="worlds-card-title">Game website · powrush.com</span>
-            <span class="worlds-card-hook">The game site. A universe of many worlds and peoples. Online play is planned, with no date.</span>
-          </span>
-        </a>
+      <div class="door-row">
+        <article class="powrush-card card-link door" aria-labelledby="powrush-card-home-heading">
+          <div class="powrush-card-frame">
+            <div class="powrush-card-inner">
+              <figure class="powrush-card-media">
+                <picture>
+                  <source type="image/avif" srcset="images/art/powrush-card-quellorian-arena-800.avif 800w, images/art/powrush-card-quellorian-arena-1600.avif 1600w" sizes="(min-width: 760px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2.5rem)">
+                  <img src="images/art/powrush-card-quellorian-arena-800.webp" srcset="images/art/powrush-card-quellorian-arena-800.webp 800w, images/art/powrush-card-quellorian-arena-1600.webp 1600w" sizes="(min-width: 760px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2.5rem)" width="800" height="450" alt="Painted art: a white-and-gold Quellorian arena ringed with violet crystals and full stands, set on a cliff above the clouds." loading="lazy" decoding="async">
+                </picture>
+              </figure>
+              <div class="powrush-card-body">
+                <h2 id="powrush-card-home-heading" class="powrush-card-title">Game website · powrush.com</h2>
+                <p class="powrush-card-copy">Quellorians of light and the Draek hivemind share a universe of many worlds. Offline Windows and Linux builds exist. Online play is planned, with no date.</p>
+                <a class="stretched-link powrush-card-btn" href="https://powrush.com/">Visit Powrush.com</a>
+                <p class="powrush-card-note">Painted art. Not a screenshot of the current offline build.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="powrush-card card-link door" aria-labelledby="rathor-card-home-heading">
+          <div class="powrush-card-frame">
+            <div class="powrush-card-inner">
+              <figure class="powrush-card-media">
+                <picture>
+                  <source type="image/avif" srcset="images/art/worlds-rathor-underwater-habitat-768.avif 768w, images/art/worlds-rathor-underwater-habitat-1500.avif 1500w" sizes="(min-width: 760px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2.5rem)">
+                  <img src="images/art/worlds-rathor-underwater-habitat-768.webp" srcset="images/art/worlds-rathor-underwater-habitat-768.webp 768w, images/art/worlds-rathor-underwater-habitat-1500.webp 1500w" sizes="(min-width: 760px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2.5rem)" width="768" height="432" alt="A glowing underwater habitat of teal domes and violet rings, lit from within, with small craft in the dark water around it." loading="lazy" decoding="async">
+                </picture>
+              </figure>
+              <div class="powrush-card-body">
+                <h2 id="rathor-card-home-heading" class="powrush-card-title">AGI system website · rathor.ai</h2>
+                <p class="powrush-card-copy">The public site for Ra-Thor, the AGI system that helps build Powrush-MMO.</p>
+                <a class="stretched-link powrush-card-btn" href="https://rathor.ai/">Visit Rathor.ai</a>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
     <section class="band" aria-label="Founding">
@@ -150,7 +164,8 @@
           <figure class="shot">
             <div class="shot-frame">
               <picture>
-                <img src="images/art/concept-ambrosian-settlement-1920.webp" srcset="images/art/concept-ambrosian-settlement-768.webp 768w, images/art/concept-ambrosian-settlement-1920.webp 1920w" sizes="(min-width: 800px) 50vw, 100vw" width="1920" height="1081" alt="A terraced stone settlement of teal and gold domes, canals, and glowing doorways, set in a mountain valley." loading="lazy" decoding="async">
+                <source type="image/avif" srcset="images/art/concept-ambrosian-settlement-768.avif 768w, images/art/concept-ambrosian-settlement-1920.avif 1920w" sizes="(min-width: 800px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2rem)">
+                <img src="images/art/concept-ambrosian-settlement-1920.webp" srcset="images/art/concept-ambrosian-settlement-768.webp 768w, images/art/concept-ambrosian-settlement-1920.webp 1920w" sizes="(min-width: 800px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2rem)" width="1920" height="1081" alt="A terraced stone settlement of teal and gold domes, canals, and glowing doorways, set in a mountain valley." loading="lazy" decoding="async">
               </picture>
             </div>
             <figcaption>Concept art. Ambrosian settlement.</figcaption>
@@ -158,7 +173,8 @@
           <figure class="shot">
             <div class="shot-frame">
               <picture>
-                <img src="images/art/concept-cydruid-settlement-1920.webp" srcset="images/art/concept-cydruid-settlement-768.webp 768w, images/art/concept-cydruid-settlement-1920.webp 1920w" sizes="(min-width: 800px) 50vw, 100vw" width="1920" height="1081" alt="A cliff settlement of white and pink organic structures over waterfalls, with teal pools and glowing doorways." loading="lazy" decoding="async">
+                <source type="image/avif" srcset="images/art/concept-cydruid-settlement-768.avif 768w, images/art/concept-cydruid-settlement-1920.avif 1920w" sizes="(min-width: 800px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2rem)">
+                <img src="images/art/concept-cydruid-settlement-1920.webp" srcset="images/art/concept-cydruid-settlement-768.webp 768w, images/art/concept-cydruid-settlement-1920.webp 1920w" sizes="(min-width: 800px) calc((min(70rem, 100vw - 2rem) - 1rem) / 2), calc(100vw - 2rem)" width="1920" height="1081" alt="A cliff settlement of white and pink organic structures over waterfalls, with teal pools and glowing doorways." loading="lazy" decoding="async">
               </picture>
             </div>
             <figcaption>Concept art. Cydruid settlement.</figcaption>
@@ -166,7 +182,8 @@
           <figure class="shot shot-wide">
             <div class="shot-frame">
               <picture>
-                <img src="images/art/concept-underwater-habitat-1920.webp" srcset="images/art/concept-underwater-habitat-768.webp 768w, images/art/concept-underwater-habitat-1920.webp 1920w" sizes="100vw" width="1920" height="1081" alt="A teal and silver habitat of connected pods on a reef, with lit rooms visible through the windows and fish in the water around it." loading="lazy" decoding="async">
+                <source type="image/avif" srcset="images/art/concept-underwater-habitat-768.avif 768w, images/art/concept-underwater-habitat-1440.avif 1440w, images/art/concept-underwater-habitat-1920.avif 1920w" sizes="min(70rem, 100vw - 2rem)">
+                <img src="images/art/concept-underwater-habitat-1920.webp" srcset="images/art/concept-underwater-habitat-768.webp 768w, images/art/concept-underwater-habitat-1440.webp 1440w, images/art/concept-underwater-habitat-1920.webp 1920w" sizes="min(70rem, 100vw - 2rem)" width="1920" height="1081" alt="A teal and silver habitat of connected pods on a reef, with lit rooms visible through the windows and fish in the water around it." loading="lazy" decoding="async">
               </picture>
             </div>
             <figcaption>Concept art. Ambrosian underwater habitat.</figcaption>
@@ -204,8 +221,14 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <img class="footer-mark logo-art logo-art-dark" src="images/logo-dark-512.webp" srcset="images/logo-dark-512.webp 1x, images/logo-dark-1024.webp 2x" alt="Autonomicity Games logo" width="512" height="585" loading="lazy" decoding="async">
-      <img class="footer-mark logo-art logo-art-light" src="images/logo-light-512.webp" srcset="images/logo-light-512.webp 1x, images/logo-light-1024.webp 2x" alt="Autonomicity Games logo" width="512" height="585" loading="lazy" decoding="async">
+      <picture>
+        <source type="image/avif" srcset="images/logo-dark-200.avif">
+        <img class="footer-mark logo-art logo-art-dark" src="images/logo-dark-200.webp" alt="Autonomicity Games logo" width="200" height="228" loading="lazy" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/avif" srcset="images/logo-light-200.avif">
+        <img class="footer-mark logo-art logo-art-light" src="images/logo-light-200.webp" alt="Autonomicity Games logo" width="200" height="228" loading="lazy" decoding="async">
+      </picture>
       <p>© 2026 Autonomicity Games Inc. AlphaProMega is a trademark of AlphaProMega Media Inc. Powrush, Autonomicity Games and the Autonomicity Games logo are trademarks of Autonomicity Games Inc. Ra-Thor™ is a trademark of Autonomicity Games Inc. (application pending). © 2026 Sherif Botros for the Ra-Thor: Living Thunder comics.</p>
       <p>Our products: <a href="https://rathor.ai/">rathor.ai</a> · <a href="https://powrush.com/">powrush.com</a></p>
       <p><a href="mailto:info@acitygames.com">info@acitygames.com</a> or <a href="mailto:info@Rathor.ai">info@Rathor.ai</a></p>
