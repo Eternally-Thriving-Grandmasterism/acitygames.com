@@ -17,18 +17,18 @@
 - Sherif Botros is the founder and current steward of Autonomicity Games Inc. Since 2003 he has followed that star on his own.
 - Autonomicity Games Inc. was founded in Canada on March 17, 2016. The name has been a play on AGI since 2016.
 - acitygames.com is the company site. powrush.com is the game site. rathor.ai is the AGI system site.
-- That work led to the Powrush universe, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark is pending.
+- That work led to the Powrush universe, in development since 2016. Building Powrush led to Ra-Thor, the AGI system behind rathor.ai. Ra-Thor now helps build Powrush-MMO. The Ra-Thor: Living Thunder comics are copyright Sherif Botros, published and sold by Autonomicity Games Inc. Ra-Thor™ is a trademark of Autonomicity Games Inc. (application pending).
 - Since November 18, 2025, Sherif Botros has run the company solo and fully AI-assisted.
 
 ## Powrush-MMO
 
-- Powrush-MMO is a universe of many worlds and peoples. PC and Linux get the full game. The engine is on Bevy 0.20.
+- Powrush-MMO is a universe of many worlds and peoples. Windows and Linux get the full game. The engine is on Bevy 0.20.
 - The yard is the universe at the scale of a well. The wider story wears five peoples and a stone.
 - If you only take, the glow fades. If you allocate, the climate comes back.
 - Walk a climate. Harvest with mercy. Learn a resource-based economy by playing. The lesson is in the hands.
 - The later hope is shared abundance, not extraction. It is a teaching, not a wage.
 - One human, one machine. Offline first. Title Online stays grey.
-- Offline Windows and Linux builds exist. They are single-player and in active development. An itch.io early access is in preparation and is not live. Online play is planned, with no date and no promise of one. There is no Steam page. It is not a public launch candidate.
+- Offline Windows and Linux builds exist. They are single-player and in active development. In development, launches when it's good enough. Online play is planned, with no date and no promise of one. There is no Steam page. It is not a public launch candidate.
 - The Powrush universe is post-apocalyptic. Lore: a fractured Earth with magma islands and a scarred moon, where scarcity, fear, and separation had nearly consumed the web of life. Then the Great Shift: a turn toward mercy, and toward a resource-based economy.
 - Diplomacy is the focus. The design is collaboration, or competition. You are free to be peaceful, or to start wars. The scale of that risk includes nuclear war, an extreme meant to be faced safely inside the Powrush universe.
 - Among its peoples are Human, Quellorian, Draek, Cydruid and Ambrosian. Under them, harmony pulls against consumption.
@@ -58,7 +58,7 @@ The site shows concept art and trailer art only. The paintings are the Powrush u
 
 - Ra-Thor may read the hour you played. It does not play that hour for you.
 - rathor.ai is the AGI system site, separate on purpose, and the public face of Ra-Thor: https://rathor.ai
-- Building the Powrush universe led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor Living Thunder comics are by AlphaProMega Media Inc. The Ra-Thor trademark is pending.
+- Building the Powrush universe led to Ra-Thor, and Ra-Thor now helps build Powrush-MMO. The Ra-Thor: Living Thunder comics are copyright Sherif Botros, published and sold by Autonomicity Games Inc. Ra-Thor™ is a trademark of Autonomicity Games Inc. (application pending).
 - Rathor.ai is built to get effective and efficient work out of AI models. It runs under hard-coded ethics, catches errors instead of hiding them, and generates new ideas by recycling ideas. A human overrides every output.
 - Not certified.
 
