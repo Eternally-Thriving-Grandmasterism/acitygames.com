@@ -66,12 +66,6 @@ body.home .hero-media {
   min-height: 64vh;
 }
 
-body.home .hero-scrim {
-  background:
-    linear-gradient(90deg, rgba(7, 6, 5, 0.94) 0, rgba(7, 6, 5, 0.92) 32rem, rgba(7, 6, 5, 0.84) 46rem, rgba(7, 6, 5, 0.34) 62rem, rgba(7, 6, 5, 0) 100%),
-    linear-gradient(180deg, rgba(7, 6, 5, 0.35) 0%, rgba(7, 6, 5, 0.2) 42%, rgba(7, 6, 5, 0.72) 100%);
-}
-
 body.home .hero-copy {
   padding: 2.5rem 0 1.5rem;
 }
